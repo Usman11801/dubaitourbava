@@ -1,0 +1,51 @@
+{
+    "tours": [
+      {
+        "id": 1,
+        "image": "assets/images/destinations/shams4.jpg",
+        "title": "Desert Safari with Bab Al Shams Dinner",
+        "location": "UAE",
+        "description": "Embark on an unforgettable adventure with our Desert Safari and Bab Al Shams Dinner experience!",
+        "duration": "3 days 2 nights",
+        "guests": "5-8 guest",
+        "price": 900,
+        "currency": "AED",
+        "image1": "assets/images/destinations/shams1.jpg",
+        "image2": "assets/images/destinations/shams4.jpg",
+        "image3": "assets/images/destinations/shams3.jpg",
+        "image4": "assets/images/destinations/shams2.jpg",
+        "image5": "assets/images/destinations/shams5.jpg",
+        "description2": "Embark on an unforgettable adventure with our Desert Safari and Bab Al Shams Dinner experience! Your journey starts with a hassle-free pickup in a pristine 4x4 vehicle. Feel the rush of dune bashing and test your skills at sandboarding as you navigate the golden dunes. Capture stunning memories during a photo stop against the stunning desert backdrop. As the sun sets, enjoy a lavish dinner at the luxurious Bab Al Shams resort, accompanied by captivating live entertainment that will leave you spellbound. Don’t miss this perfect fusion of adventure and luxury—book your experience today!",
+        "title2": "Desert Safari with Bab Al Shams Dinner",
+        "pick": {
+          "pickup_and_drop_off": "Convenient pickup and drop-off services are included from hotels and apartments in Dubai.",
+          "dune_bashing": "Enjoy an adrenaline-pumping dune bashing experience in a 4x4 vehicle led by expert drivers who navigate the desert terrain.",
+          "desert_sunset": "Marvel at the stunning desert sunset, offering a beautiful backdrop for photos.",
+          "camel_riding": "Take a peaceful ride across the desert on a camel, connecting with the rich heritage of the region.",
+          "traditional_welcome": "Upon arrival at the desert camp, enjoy a traditional Arabian welcome, with dates, Arabic coffee, and refreshing beverages.",
+          "cultural_activities": "Engage in henna painting, falconry displays, and traditional Arabic dress photo opportunities.",
+          "live_entertainment": "Delight in mesmerizing belly dance performances, captivating Tanoura dances, and live music under the stars.",
+          "bab_al_shams_dinner": "Savor traditional Emirati cuisine served at the Bab Al Shams Desert Resort, complemented by live cultural performances and starlit ambiance.",
+          "shisha_corner": "Relax and unwind in a designated area where you can enjoy flavorful shisha under the desert sky.",
+          "comfort_facilities": "Access modern amenities, including clean restrooms, comfortable seating, and designated prayer areas."
+        },
+        "excluded": {
+          "alcoholic_beverages": "Alcoholic beverages are not typically included and may need to be purchased separately.",
+          "souvenirs_and_personal_expenses": "Additional purchases, such as souvenirs, photographs, and personal items, are not included in the package.",
+          "optional_activities": "Certain activities, such as quad biking or extended camel rides, are available for an additional cost and are not part of the standard tour package.",
+          "gratuities": "Gratuities for guides, drivers, and staff members are not included and are left at the guests' discretion."
+        },
+        "rating": 5
+      }
+      
+      
+     
+
+    ],
+    "pagination": {
+      "currentPage": 1,
+      "totalPages": 3,
+      "toursPerPage": 3
+    }
+  }
+  
