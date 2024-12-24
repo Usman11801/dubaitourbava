@@ -340,7 +340,7 @@ const page = () => {
                   />
                 ))}
               </Accordion>
-              <h3>Frequently Asked Questions</h3>
+              {/* <h3>Frequently Asked Questions</h3> */}
               {/* <Accordion
                 className="accordion-one mt-25 mb-60"
                 defaultActiveKey={active2}

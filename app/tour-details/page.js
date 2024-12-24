@@ -10,7 +10,7 @@ import toursData from "../tour-list/toursData.json";
 const page = () => {
   const [id, setId] = useState(null);
   const [tour, setTour] = useState(null);
-  const [selectedValue, setSelectedValue] = useState(1);
+  // const [selectedValue, setSelectedValue] = useState(1);
 
   useEffect(() => {
     if (typeof window !== "undefined") {
@@ -30,10 +30,10 @@ const page = () => {
 
 
 
-  const handleChange = (event) => {
-    setSelectedValue(event.target.value);
-  };
-  console.log('selected val--->', selectedValue)
+  // const handleChange = (event) => {
+  //   setSelectedValue(event.target.value);
+  // };
+  // console.log('selected val--->', selectedValue)
 
 
   const [active, setActive] = useState("collapse0");
@@ -755,7 +755,7 @@ const page = () => {
                     <ul className="tickets clearfix">
                       <li>
                         Adult (18- years) <span className="price">{tour?.price / 2}</span>
-                        <select name="18-" id="18-" value={selectedValue} onChange={handleChange}>
+                        <select name="18-" id="18-">
                           <option value="01">01</option>
                           <option value="02">02</option>
                           <option value="03">03</option>
