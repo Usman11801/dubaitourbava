@@ -875,7 +875,7 @@ const page = () => {
       </section>
       {/* Tour Details Area end */}
       {/* Newsletter Area start */}
-      <Subscribe />
+      {/* <Subscribe /> */}
       {/* Newsletter Area end */}
     </ReveloLayout>
   );

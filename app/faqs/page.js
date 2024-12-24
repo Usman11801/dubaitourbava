@@ -164,11 +164,10 @@ const page = () => {
                 </div>
                 <div className="content">
                   <h6>
-                    <Link href="destination-details">500+ Destinations</Link>
+                    <Link href="tour-list">Safari Destinations</Link>
                   </h6>
                   <p>
-                    Adventure seekers can embark thrilling journeys through the
-                    Amazon Rainforest or scale
+                    Adventure seekers can embark thrilling journeys.
                   </p>
                 </div>
               </div>
@@ -186,11 +185,10 @@ const page = () => {
                 </div>
                 <div className="content">
                   <h6>
-                    <Link href="destination-details">Best Price Guarantee</Link>
+                    <Link href="sight-see-list">In City Destinations</Link>
                   </h6>
                   <p>
-                    Adventure seekers can embark thrilling journeys through the
-                    Amazon Rainforest or scale
+                    Adventure seekers can embark thrilling journeys
                   </p>
                 </div>
               </div>
@@ -208,11 +206,10 @@ const page = () => {
                 </div>
                 <div className="content">
                   <h6>
-                    <Link href="destination-details">Diverse Destinations</Link>
+                    <Link href="desert-resort-list">Desert resort Destinations</Link>
                   </h6>
                   <p>
-                    Adventure seekers can embark thrilling journeys through the
-                    Amazon Rainforest or scale
+                    Adventure seekers can embark thrilling journeys.
                   </p>
                 </div>
               </div>
@@ -230,7 +227,7 @@ const page = () => {
                 </div>
                 <div className="content">
                   <h6>
-                    <Link href="destination-details">Best Travel Guide</Link>
+                    <Link href="theme-park-list">Theme park destinations</Link>
                   </h6>
                   <p>
                     Adventure seekers can embark thrilling journeys through the

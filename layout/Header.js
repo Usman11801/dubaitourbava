@@ -67,7 +67,7 @@ const Menu = () => {
               <a href="#">Tours & destinations</a>
               <ul>
                 <li>
-                  <Link href="tour-list">Desert Safari Destinations</Link>
+                  <Link href="tour-list">Desert Safari</Link>
                 </li>
                 <li>
                   <Link href="sight-see-list">City Tour</Link>

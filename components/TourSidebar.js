@@ -391,14 +391,14 @@ const TourSidebar = () => {
         data-aos-duration={1500}
         data-aos-offset={50}
       >
-        <div className="content text-white">
+        {/* <div className="content text-white">
           <span className="h6">Explore The World</span>
           <h3>Best Tourist Place</h3>
           <Link href="tour-grid" className="theme-btn style-two bgc-secondary">
             <span data-hover="Explore Now">Explore Now</span>
             <i className="fal fa-arrow-right" />
           </Link>
-        </div>
+        </div> */}
         <div className="image">
           <img src="assets/images/widgets/cta-widget.png" alt="CTA" />
         </div>

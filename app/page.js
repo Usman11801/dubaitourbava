@@ -6,10 +6,14 @@ import ReveloLayout from "@/layout/ReveloLayout";
 import Link from "next/link";
 import destinations from './Jsons/destinations.json';
 import destinations2 from './Jsons/destinations2.json';
+import FloatingWhatsApp from "../components/FloatingWhatsApp";
 const page = () => {
   return (
-    <ReveloLayout header={1} footer={1}>
+   <div>
+    <FloatingWhatsApp encodedMessage={'hey usman is here'}/>
+     <ReveloLayout header={1} footer={1}>
       {/* Hero Area Start */}
+      
       <section className="hero-area bgc-black pt-200 rpt-120 rel z-2">
         <div className="container-fluid">
           <h1
@@ -31,71 +35,71 @@ const page = () => {
       {/* Hero Area End */}
       {/* Destinations Area start */}
       <section className="destinations-area bgc-black pt-100 pb-70 rel z-1">
-      <div className="container-fluid">
-        <div className="row justify-content-center">
-          <div className="col-lg-12">
-            <div
-              className="section-title text-white text-center counter-text-wrap mb-70"
-              data-aos="fade-up"
-              data-aos-duration={1500}
-              data-aos-offset={50}
-            >
-              <SectionTitle
-                title={"Discover the Dubai with Urban Adventure tourism"}
-                countValue={34500}
-                subtitle1={"One site"}
-                subtitle2={"most popular experience you’ll remember"}
-              />
-            </div>
-          </div>
-        </div>
-        <div className="row justify-content-center">
-          {destinations.map((destination, index) => (
-            <div
-              className="col-xxl-3 col-xl-4 col-md-6"
-              key={destination.id}
-            >
+        <div className="container-fluid">
+          <div className="row justify-content-center">
+            <div className="col-lg-12">
               <div
-                className="destination-item"
+                className="section-title text-white text-center counter-text-wrap mb-70"
                 data-aos="fade-up"
-                data-aos-delay={index * 100}
                 data-aos-duration={1500}
                 data-aos-offset={50}
               >
-                <div className="image">
-                  <div className="ratting">
-                    <i className="fas fa-star" /> {destination.rating}
-                  </div>
-                  <a href="#" className="heart">
-                    <i className="fas fa-heart" />
-                  </a>
-                  <img
-                    src={destination.image}
-                    alt="Destination"
-                  />
-                </div>
-                <div className="content">
-                  <span className="location">
-                    <i className="fal fa-map-marker-alt" /> {destination.location}
-                  </span>
-                  <h5>
-                  <Link key={destination.id} href={destination.link}>
-    {destination.title}
-  </Link>
-                  </h5>
-                  <span className="time">{destination.time}</span>
-                </div>
-                <div className="destination-footer">
-                  <a href="#" className="read-more">
-                    Check more details <i className="fal fa-angle-right" />
-                  </a>
-                </div>
+                <SectionTitle
+                  title={"Discover the Dubai with Urban Adventure tourism"}
+                  countValue={34500}
+                  subtitle1={"One site"}
+                  subtitle2={"most popular experience you’ll remember"}
+                />
               </div>
             </div>
-          ))}
+          </div>
+          <div className="row justify-content-center">
+            {destinations.map((destination, index) => (
+              <div
+                className="col-xxl-3 col-xl-4 col-md-6"
+                key={destination.id}
+              >
+                <div
+                  className="destination-item"
+                  data-aos="fade-up"
+                  data-aos-delay={index * 100}
+                  data-aos-duration={1500}
+                  data-aos-offset={50}
+                >
+                  <div className="image">
+                    <div className="ratting">
+                      <i className="fas fa-star" /> {destination.rating}
+                    </div>
+                    <a href="#" className="heart">
+                      <i className="fas fa-heart" />
+                    </a>
+                    <img
+                      src={destination.image}
+                      alt="Destination"
+                    />
+                  </div>
+                  <div className="content">
+                    <span className="location">
+                      <i className="fal fa-map-marker-alt" /> {destination.location}
+                    </span>
+                    <h5>
+                      <Link key={destination.id} href={destination.link}>
+                        {destination.title}
+                      </Link>
+                    </h5>
+                    <span className="time">{destination.time}</span>
+                  </div>
+                  <div className="destination-footer">
+                    <a href="#" className="read-more">
+                      Check more details <i className="fal fa-angle-right" />
+                    </a>
+                  </div>
+                </div>
+              </div>
+            ))}
+          </div>
         </div>
-      </div>
-    </section>
+      </section>
       {/* Destinations Area end */}
       {/* About Us Area start */}
       <section className="about-us-area py-100 rpb-90 rel z-1">
@@ -159,7 +163,7 @@ const page = () => {
                     </div>
                   </div>
                 </div>
-                <Link href="destination1" className="theme-btn mt-10 style-two">
+                <Link href="tour-list" className="theme-btn mt-10 style-two">
                   <span data-hover="Explore Destinations">
                     Explore Destinations
                   </span>
@@ -222,49 +226,49 @@ const page = () => {
               </div>
             </div>
             <div className="container">
-      <div className="row justify-content-center">
-        {destinations2.map((destination, index) => (
-          <div key={index} className="col-xl-3 col-md-6">
-            <div
-              className="destination-item style-two"
-              data-aos="flip-up"
-              data-aos-delay={destination.aosDelay}
-              data-aos-duration={1500}
-              data-aos-offset={50}
-            >
-              <div className="image">
-                <a href="#" className="heart">
-                  <i className="fas fa-heart" />
-                </a>
-                <img src={destination.image} alt="Destination" />
-              </div>
-              <div className="content">
-                <h6>
-                <Link href={{
-                        pathname: '/top-tour-details',
-                        query: { id: destination?.id },
-                      }}>{destination.title}</Link>
-                </h6>
-                <h7>Price</h7><br/>
-                <h7>AED  {destination.price}</h7><br/>
-                <Link
-                        href={{
-                          pathname: '/top-tour-details',
-                        query: { id: destination?.id },
-                        }}
-                        // href={tour.link}
-                        className="theme-btn style-two style-three"
-                      >
-                        <span data-hover="Book Now">Book Now</span>
-                       
-                      </Link>
-            
+              <div className="row justify-content-center">
+                {destinations2.map((destination, index) => (
+                  <div key={index} className="col-xl-3 col-md-6">
+                    <div
+                      className="destination-item style-two"
+                      data-aos="flip-up"
+                      data-aos-delay={destination.aosDelay}
+                      data-aos-duration={1500}
+                      data-aos-offset={50}
+                    >
+                      <div className="image">
+                        <a href="#" className="heart">
+                          <i className="fas fa-heart" />
+                        </a>
+                        <img src={destination.image} alt="Destination" />
+                      </div>
+                      <div className="content">
+                        <h6>
+                          <Link href={{
+                            pathname: '/top-tour-details',
+                            query: { id: destination?.id },
+                          }}>{destination.title}</Link>
+                        </h6>
+                        <h7>Price</h7><br />
+                        <h7>AED  {destination.price}</h7><br />
+                        <Link
+                          href={{
+                            pathname: '/top-tour-details',
+                            query: { id: destination?.id },
+                          }}
+                          // href={tour.link}
+                          className="theme-btn style-two style-three"
+                        >
+                          <span data-hover="Book Now">Book Now</span>
+
+                        </Link>
+
+                      </div>
+                    </div>
+                  </div>
+                ))}
               </div>
             </div>
-          </div>
-        ))}
-      </div>
-    </div>
           </div>
         </div>
       </section>
@@ -344,7 +348,7 @@ const page = () => {
                         <Link href="tour-details">Desert Safari</Link>
                       </h5>
                       <p>
-                      Experience the ultimate desert adventure with Sunrise View Safari
+                        Experience the ultimate desert adventure with Sunrise View Safari
                       </p>
                     </div>
                   </div>
@@ -357,7 +361,7 @@ const page = () => {
                         <Link href="tour-details">Dinner</Link>
                       </h5>
                       <p>
-                      Desert Safari with Bab Al Shams Dinner
+                        Desert Safari with Bab Al Shams Dinner
                       </p>
                     </div>
                   </div>
@@ -386,7 +390,7 @@ const page = () => {
                         <Link href="tour-details">Duad Biking with Childrens</Link>
                       </h5>
                       <p>
-                      Duad Biking with Childrens are the best
+                        Duad Biking with Childrens are the best
                       </p>
                     </div>
                   </div>
@@ -637,7 +641,7 @@ const page = () => {
       </section> */}
       {/* Hotel Area end */}
 
-      
+
       {/* Mobile App Area start */}
       {/* <section className="mobile-app-area py-100 rel z-1">
         <div className="container">
@@ -955,6 +959,8 @@ const page = () => {
         </div>
       </section> */}
     </ReveloLayout>
+
+   </div>
   );
 };
 export default page;

@@ -423,7 +423,7 @@ const Footer2 = ({ insta }) => {
                 </div>
               </div>
             </div>
-            <div
+            {/* <div
               className="col col-small"
               data-aos="fade-up"
               data-aos-delay={50}
@@ -436,7 +436,7 @@ const Footer2 = ({ insta }) => {
                 </div>
                 <ul className="list-style-three">
                   <li>
-                    <Link href="destination-details">Best Tour Guide</Link>
+                    <Link href="/about">About Services</Link>
                   </li>
                   <li>
                     <Link href="destination-details">Tour Booking</Link>
@@ -449,7 +449,7 @@ const Footer2 = ({ insta }) => {
                   </li>
                 </ul>
               </div>
-            </div>
+            </div> */}
             <div
               className="col col-small"
               data-aos="fade-up"

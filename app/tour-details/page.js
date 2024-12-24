@@ -10,6 +10,7 @@ import toursData from "../tour-list/toursData.json";
 const page = () => {
   const [id, setId] = useState(null);
   const [tour, setTour] = useState(null);
+  const [selectedValue, setSelectedValue] = useState(1);
 
   useEffect(() => {
     if (typeof window !== "undefined") {
@@ -27,6 +28,12 @@ const page = () => {
     }
   }, []);
 
+
+
+  const handleChange = (event) => {
+    setSelectedValue(event.target.value);
+  };
+  console.log('selected val--->', selectedValue)
 
 
   const [active, setActive] = useState("collapse0");
@@ -219,43 +226,43 @@ const page = () => {
                     <div className="tour-include-exclude mt-30">
                       <h5>Included or excluded</h5>
                       <div className="row pb-55">
-  <div className="">
-    <div className="tour-include-exclude mt-30">
-      <h5>Included</h5>
-      {Object.entries(tour?.pick || {}).map(([key, description]) => (
-        <div key={key} className="pickup-section">
-          <div className="pickup-logo-text">
-            <div>
-              <h7 style={{ fontWeight: 'bold', color: '#303030' }}>
-                {key.replace(/_/g, ' ').toUpperCase()}
-              </h7>
-              <p>{description || `No ${key.replace(/_/g, ' ')} details available.`}</p>
-            </div>
-          </div>
-        </div>
-      ))}
-    </div>
-  </div>
-</div>
-<div className="row pb-55">
-  <div className="">
-    <div className="tour-include-exclude mt-30">
-      <h5>Excluded</h5>
-      {Object.entries(tour?.excluded || {}).map(([key, description]) => (
-        <div key={key} className="pickup-section">
-          <div className="pickup-logo-text">
-            <div>
-              <h7 style={{ fontWeight: 'bold', color: '#303030' }}>
-                {key.replace(/_/g, ' ').toUpperCase()}
-              </h7>
-              <p>{description || `No ${key.replace(/_/g, ' ')} details available.`}</p>
-            </div>
-          </div>
-        </div>
-      ))}
-    </div>
-  </div>
-</div>
+                        <div className="">
+                          <div className="tour-include-exclude mt-30">
+                            <h5>Included</h5>
+                            {Object.entries(tour?.pick || {}).map(([key, description]) => (
+                              <div key={key} className="pickup-section">
+                                <div className="pickup-logo-text">
+                                  <div>
+                                    <h7 style={{ fontWeight: 'bold', color: '#303030' }}>
+                                      {key.replace(/_/g, ' ').toUpperCase()}
+                                    </h7>
+                                    <p>{description || `No ${key.replace(/_/g, ' ')} details available.`}</p>
+                                  </div>
+                                </div>
+                              </div>
+                            ))}
+                          </div>
+                        </div>
+                      </div>
+                      <div className="row pb-55">
+                        <div className="">
+                          <div className="tour-include-exclude mt-30">
+                            <h5>Excluded</h5>
+                            {Object.entries(tour?.excluded || {}).map(([key, description]) => (
+                              <div key={key} className="pickup-section">
+                                <div className="pickup-logo-text">
+                                  <div>
+                                    <h7 style={{ fontWeight: 'bold', color: '#303030' }}>
+                                      {key.replace(/_/g, ' ').toUpperCase()}
+                                    </h7>
+                                    <p>{description || `No ${key.replace(/_/g, ' ')} details available.`}</p>
+                                  </div>
+                                </div>
+                              </div>
+                            ))}
+                          </div>
+                        </div>
+                      </div>
 
                       {/* <ul className="list-style-one check mt-25">
                         <li>
@@ -357,8 +364,8 @@ const page = () => {
               <h3>Maps</h3>
               <div className="tour-map mt-30 mb-50">
                 <iframe
-                   src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d28917.758162586367!2d55.270783!3d25.204849!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sbd!4v1706508986625!5m2!1sen!2sbd" 
-                   style={{ border: 0, width: "100%" }}
+                  src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d28917.758162586367!2d55.270783!3d25.204849!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sbd!4v1706508986625!5m2!1sen!2sbd"
+                  style={{ border: 0, width: "100%" }}
                   allowFullScreen=""
                   loading="lazy"
                   referrerPolicy="no-referrer-when-downgrade"
@@ -746,17 +753,15 @@ const page = () => {
                     <h6>Tickets:</h6>
                     <ul className="tickets clearfix">
                       <li>
-                        Adult (18- years) <span className="price">$28.50</span>
-                        <select name="18-" id="18-">
-                          <option value="value1">01</option>
-                          <option value="value1">02</option>
-                          <option value="value1" selected="">
-                            03
-                          </option>
+                        Adult (18- years) <span className="price">{tour?.price / 2}</span>
+                        <select name="18-" id="18-" value={selectedValue} onChange={handleChange}>
+                          <option value="01">01</option>
+                          <option value="02">02</option>
+                          <option value="03">03</option>
                         </select>
                       </li>
                       <li>
-                        Adult (18+ years) <span className="price">$50.40</span>
+                        Adult (18+ years) <span className="price">{tour?.price}</span>
                         <select name="18+" id="18+">
                           <option value="value1">01</option>
                           <option value="value1">02</option>
@@ -764,8 +769,8 @@ const page = () => {
                         </select>
                       </li>
                     </ul>
-                    <hr className="mb-25" />
-                    <h6>Add Extra:</h6>
+                    {/* <hr className="mb-25" /> */}
+                    {/* <h6>Add Extra:</h6>
                     <ul className="radio-filter pt-5">
                       <li>
                         <input
@@ -790,10 +795,10 @@ const page = () => {
                           Add service per personal <span>$24</span>
                         </label>
                       </li>
-                    </ul>
+                    </ul> */}
                     <hr />
                     <h6>
-                      Total: <span className="price">$74</span>
+                      Total: <span className="price">{tour?.price}</span>
                     </h6>
                     <button
                       type="submit"
@@ -861,7 +866,7 @@ const page = () => {
       </section>
       {/* Tour Details Area end */}
       {/* Newsletter Area start */}
-      <Subscribe />
+      {/* <Subscribe /> */}
       {/* Newsletter Area end */}
     </ReveloLayout>
   );
