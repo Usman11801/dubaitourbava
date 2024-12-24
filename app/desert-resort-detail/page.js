@@ -28,53 +28,41 @@ const page = () => {
   }, []);
 
 
-
   const faqItem = [
     {
       id: 1,
-      title: "1. What services does your tour and travel agency offer?",
+      title: "1. Do I get picked from hotel when I book a Desert Safari Tour?",
+      answer: "Yes we shall pick you from your hotel / residence for Dubai Desert Safari. And there is no additional charges for Pick it's included in the Price ."
     },
     {
       id: 2,
-      title: " 2. How do I book a tour or travel package?",
+      title: "2. How long is the Desert Safari?",
+      answer: "Dubai Desert Safari is 6 hours tour in Evening. 4 Hours tour is you go for Morning Desert Safari. And if you go for Over Night Desert Safari it will be around 16 Hours Tour."
     },
     {
       id: 3,
-      title: " 3. What types of tours do you offer?",
+      title: "3. How long is Quad Biking?",
+      answer: "Quad biking will be for 20 to 30 minutes."
     },
     {
       id: 4,
-      title: " 4. Can I customize my travel package?",
+      title: "4. Can Kids Drive Quad Bikes?",
+      answer: "Yes we have special quad bikes which are designed for the young kids."
     },
     {
       id: 5,
-      title: " 5. Are your tours suitable for families with children?",
+      title: "5. Is there Veg Food Also?",
+      answer: "Yes, vegetarian food options are available as part of the safari."
+    },
+    {
+      id: 6,
+      title: "6. What is the maximum number of people who can go to Desert Safari?",
+      answer: "There is no limit to that as we have many cars and can arrange many more if needed. Also no matter how many people are there in the safari only 6 people get in to a 4x4 ( including the driver ) so the size of the group does not effect the quality of the tour."
     },
   ];
   const [active, setActive] = useState("collapse0");
 
-  const faqItem2 = [
-    {
-      id: 1,
-      title: "01_What services does your tour and travel agency offer?",
-    },
-    {
-      id: 2,
-      title: " 02_How do I book a tour or travel package?",
-    },
-    {
-      id: 3,
-      title: " 03_What types of tours do you offer?",
-    },
-    {
-      id: 4,
-      title: " 04_Can I customize my travel package?",
-    },
-    {
-      id: 5,
-      title: " 05_Are your tours suitable for families with children?",
-    },
-  ];
+
   const [active2, setActive2] = useState("collapse0");
   return (
     <ReveloLayout>
@@ -342,6 +330,7 @@ const page = () => {
                 {faqItem.map((data, i) => (
                   <RaveloAccordion
                     title={data.title}
+                    answer={data.answer}
                     key={data.id}
                     event={`collapse${i}`}
                     onClick={() =>

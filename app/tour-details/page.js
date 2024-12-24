@@ -329,7 +329,7 @@ const page = () => {
                   <b>Yoga</b>
                 </div>
               </div> */}
-              {/* <h3>Itinerary</h3>
+              <h3>Itinerary</h3>
               <Accordion
                 className="accordion-two mt-25 mb-60"
                 defaultActiveKey={active}
@@ -337,6 +337,7 @@ const page = () => {
                 {faqItem.map((data, i) => (
                   <RaveloAccordion
                     title={data.title}
+                    answer={data.answer}
                     key={data.id}
                     event={`collapse${i}`}
                     onClick={() =>
@@ -345,7 +346,7 @@ const page = () => {
                     active={active}
                   />
                 ))}
-              </Accordion> */}
+              </Accordion>
               {/* <h3>Frequently Asked Questions</h3>
               <Accordion className="accordion-one" defaultActiveKey={active}>
   {faqItem.map((data, i) => (
