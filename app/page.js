@@ -249,8 +249,8 @@ const page = () => {
                             query: { id: destination?.id },
                           }}>{destination.title}</Link>
                         </h6>
-                        <h7>Price</h7><br />
-                        <h7>AED  {destination.price}</h7><br />
+                        <p>Price</p><br />
+                        <p>AED  {destination.price}</p><br />
                         <Link
                           href={{
                             pathname: '/top-tour-details',

@@ -78,9 +78,9 @@ const Menu = () => {
                 <li>
                   <Link href="theme-park-list">Theme Park</Link>
                 </li>
-                {/* <li>
-                  <Link href="tour-guide">Tour Guide</Link>
-                </li> */}
+                <li>
+                  <Link href="buggy-bike-list">Buggy & Quad Bikes</Link>
+                </li>
                  <li>
               
             </li>

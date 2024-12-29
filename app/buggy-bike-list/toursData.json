@@ -1,0 +1,185 @@
+{
+    "tours": [
+     
+
+      {
+        "id": 1,
+        "title": "Morning Desert Safari with Quad Bike",
+        "location": "UAE",
+        "description": "Experience the thrill of a Morning Desert Safari in Dubai! Dive into an adrenaline-packed adventure with quad biking.",
+        "duration": "3 days 2 nights",
+        "guests": "Per Person",
+        "price": 300,
+        "currency": "AED",
+        "image": "assets/images/destinations/Bike.jpg",
+        "badge": "Popular",
+        "rating": 5,
+        "link": "tour-details",
+        "description2": "Embark on an unforgettable Morning Desert Safari in Dubai! Immerse yourself in excitement with heart-pounding quad biking, thrilling dune bashing, and the exhilaration of sandboarding. Travel in comfort and style as our expert safari guide picks you up and drops you off in a luxurious 4x4 vehicle. Capture stunning photos against the awe-inspiring desert landscape. Don’t wait—secure your adventure today and make memories that will last a lifetime!",
+        "image1": "assets/images/destinations/bike1.jpg",
+        "image2": "assets/images/destinations/bike2.jpg",
+        "image3": "assets/images/destinations/bike4.jpg",
+        "image4": "assets/images/destinations/bike3.jpg",
+        "image5": "assets/images/destinations/bike5.jpg",
+        "title2": "Morning Desert Safari with Quad Bike Dubai",
+        "pick": {
+          "pickup_and_dropoff": "Morning desert safari packages include convenient pick-up and drop-off services from hotels in Dubai. This ensures hassle-free transportation to and from the desert.",
+          "dune_bashing": "The thrill of dune bashing is one of the highlights of a desert safari, in which skilled drivers maneuver 4x4 vehicles over sand dunes.",
+          "sand_boarding": "Morning desert safari packages include sand boarding, which involves sliding down sand dunes on specially designed boards, similar to snowboarding.",
+          "professional_guide": "An experienced guide often accompanies the safari to provide information about the desert environment, local customs, and answer participants' questions.",
+          "duration": "Morning desert safaris last for 3-4 hours, so participants can experience the beauty of the desert without taking up the entire day.",
+          "desert_activities": "You can include additional desert activities, such as camel rides, dune buggy rides, or falconry displays, to provide participants with a variety of experiences.",
+          "quad_biking": "Experience an adrenaline-fueled adventure on a quad bike as you zip across the sand dunes, exploring the vast expanse of the desert.",
+          "refreshments": "Water is typically provided to keep participants hydrated and energized during the safari.",
+          "safety_equipment": "Participants are usually provided with safety equipment such as seat belts in vehicles and helmets for certain activities such as quad biking and dune buggy rides.",
+          "photography_opportunities": "While on safari, tourists have ample opportunities to capture stunning photographs of the desert landscape, camel rides, and other activities."
+        },
+        "excluded": {
+          "breakfast": "Before or after the safari, participants are usually responsible for their own meals. Breakfast is usually not included in morning desert safari packages.",
+          "optional_activities": "The standard safari package usually does not include optional activities such as souvenir shopping, photography services, or additional adventure activities.",
+          "personal_expenses": "Souvenirs, personal purchases, tips for guides or drivers, and any other personal expenses are not typically included in safari prices.",
+          "outside_designated_areas": "If the participant's hotel is outside the designated pick-up/drop-off areas, transport to and from the safari starting point may incur additional charges.",
+          "guide_gratuities": "Tipping the safari guide and driver is not typically included in the safari price and is at the discretion of the participants.",
+          "language_specific_guides": "There may be an additional fee if participants require a guide who speaks a language other than the safari's default language."
+        }
+
+      },
+      {
+        "id": 2,
+        "title": "Desert Safari with Dune buggy ride",
+        "location": "UAE",
+        "description": "Embark on the ultimate Morning Desert Safari adventure! Experience the thrill of quad biking across breathtaking dunes, enjoy a serene camel ride through stunning landscapes.",
+        "duration": "3 days 2 nights",
+        "guests": "per person",
+        "price": 800,
+        "currency": "AED",
+        "image": "assets/images/destinations/camel.jpg",
+        "badge": null,
+        "rating": 5,
+        "link": "tour-details",
+        "description2": "Set off on the ultimate Morning Desert Safari adventure! Feel the adrenaline as you ride a quad bike across the towering dunes, take a tranquil camel ride through picturesque landscapes, and experience the exhilaration of dune bashing in a 4x4 Land Cruiser or Nissan Patrol.With convenient pickup from your hotel or apartment, our expert safari guides ensure an unforgettable journey. Snap stunning photos of the desert’s breathtaking beauty, glide down the dunes with exciting sandboarding, and stay refreshed with complimentary water bottles. Don’t miss this chance to explore Dubai’s magnificent deserts—book your adventure today!",
+        "image1": "assets/images/destinations/camel1.jpg",
+        "image2": "assets/images/destinations/camel2.jpg",
+        "image3": "assets/images/destinations/camel4.jpg",
+        "image4": "assets/images/destinations/camel3.jpg",
+        "image5": "assets/images/destinations/camel5.jpg",
+        "title2": "Morning Desert Safari with Quad Bike and Camel Ride Dubai",
+        "pick": {
+          "pickup_and_drop_off": "Morning desert safari packages that include convenient pick-up and drop-off services from hotels in Dubai. This ensures hassle-free transportation to and from the desert.",
+          "dune_bashing": "The thrill of dune bashing is one of the highlights of a desert safari, in which skilled drivers maneuver 4x4 vehicles over sand dunes.",
+          "sand_boarding": "Morning desert safari packages include sand boarding, which involves sliding down sand dunes on specially designed boards, similar to snowboarding.",
+          "professional_guide": "An experienced guide often accompanies the safari to provide information about the desert environment, local customs, and answer participants' questions.",
+          "duration": "Morning desert safaris last for 3-4 hours, so participants can experience the beauty of the desert without taking up the entire day.",
+          "desert_activities": "You can include additional desert activities, such as camel ride, dune buggy rides, or falconry displays, to provide participants with a variety of experiences.",
+          "quad_biking": "Experience an adrenaline-fueled adventure on a quad bike as you zip across the sand dunes, exploring the vast expanse of the desert.",
+          "camel_riding": "Enjoy a scenic camel ride in the Lahbab Desert, perfect for capturing stunning photos and soaking in the tranquil beauty of the dunes.",
+          "refreshments": "Water bottles are typically provided to keep participants hydrated and energized during the safari.",
+          "safety_equipment": "Participants are usually provided with safety equipment such as seat belts in vehicles and helmets for certain activities such as quad biking and dune buggy rides.",
+          "photography_opportunities": "While on safari, tourists have ample opportunities to capture stunning photographs of the desert landscape, camel rides, and other activities."
+        },
+        "excluded": {
+          "breakfast": "Before or after the safari, participants are usually responsible for their own meals. Breakfast is usually not included in morning desert safari packages.",
+          "optional_activities": "The standard safari package usually does not include optional activities such as souvenir shopping, photography services, or additional adventure activities.",
+          "personal_expenses": "Souvenirs, personal purchases, tips for guides or drivers, and any other personal expenses are not typically included in safari prices.",
+          "outside_designated_areas": "If the participant's hotel is outside the designated pick-up/drop-off areas, transport to and from the safari starting point may incur additional charges.",
+          "guide_gratuities": "Tipping the safari guide and driver is not typically included in the safari price and is at the discretion of the participants.",
+          "language_specific_guides": "There may be an additional fee if participants require a guide who speaks a language other than the safari's default language."
+        }
+      },
+      {
+        "id": 3,
+        "title": "Desert Safari with Quad Bike",
+        "location": "UAE",
+        "description": "Experience the thrill of a Morning Desert Safari in Dubai! Dive into an adrenaline-packed adventure with quad biking.",
+        "duration": "3 days 2 nights",
+        "guests": "5-8 guest",
+        "price": 300,
+        "currency": "AED",
+        "image": "assets/images/destinations/Bike.jpg",
+        "badge": "Popular",
+        "rating": 5,
+        "link": "tour-details",
+        "description2": "Embark on an unforgettable Morning Desert Safari in Dubai! Immerse yourself in excitement with heart-pounding quad biking, thrilling dune bashing, and the exhilaration of sandboarding. Travel in comfort and style as our expert safari guide picks you up and drops you off in a luxurious 4x4 vehicle. Capture stunning photos against the awe-inspiring desert landscape. Don’t wait—secure your adventure today and make memories that will last a lifetime!",
+        "image1": "assets/images/destinations/bike1.jpg",
+        "image2": "assets/images/destinations/bike2.jpg",
+        "image3": "assets/images/destinations/bike4.jpg",
+        "image4": "assets/images/destinations/bike3.jpg",
+        "image5": "assets/images/destinations/bike5.jpg",
+        "title2": "Morning Desert Safari with Quad Bike Dubai",
+        "pick": {
+          "pickup_and_dropoff": "Morning desert safari packages include convenient pick-up and drop-off services from hotels in Dubai. This ensures hassle-free transportation to and from the desert.",
+          "dune_bashing": "The thrill of dune bashing is one of the highlights of a desert safari, in which skilled drivers maneuver 4x4 vehicles over sand dunes.",
+          "sand_boarding": "Morning desert safari packages include sand boarding, which involves sliding down sand dunes on specially designed boards, similar to snowboarding.",
+          "professional_guide": "An experienced guide often accompanies the safari to provide information about the desert environment, local customs, and answer participants' questions.",
+          "duration": "Morning desert safaris last for 3-4 hours, so participants can experience the beauty of the desert without taking up the entire day.",
+          "desert_activities": "You can include additional desert activities, such as camel rides, dune buggy rides, or falconry displays, to provide participants with a variety of experiences.",
+          "quad_biking": "Experience an adrenaline-fueled adventure on a quad bike as you zip across the sand dunes, exploring the vast expanse of the desert.",
+          "refreshments": "Water is typically provided to keep participants hydrated and energized during the safari.",
+          "safety_equipment": "Participants are usually provided with safety equipment such as seat belts in vehicles and helmets for certain activities such as quad biking and dune buggy rides.",
+          "photography_opportunities": "While on safari, tourists have ample opportunities to capture stunning photographs of the desert landscape, camel rides, and other activities."
+        },
+        "excluded": {
+          "breakfast": "Before or after the safari, participants are usually responsible for their own meals. Breakfast is usually not included in morning desert safari packages.",
+          "optional_activities": "The standard safari package usually does not include optional activities such as souvenir shopping, photography services, or additional adventure activities.",
+          "personal_expenses": "Souvenirs, personal purchases, tips for guides or drivers, and any other personal expenses are not typically included in safari prices.",
+          "outside_designated_areas": "If the participant's hotel is outside the designated pick-up/drop-off areas, transport to and from the safari starting point may incur additional charges.",
+          "guide_gratuities": "Tipping the safari guide and driver is not typically included in the safari price and is at the discretion of the participants.",
+          "language_specific_guides": "There may be an additional fee if participants require a guide who speaks a language other than the safari's default language."
+        }
+
+      },
+      {
+        "id": 4,
+        "title": "Morning Desert Safari with Dune buggy ride",
+        "location": "UAE",
+        "description": "Embark on the ultimate Morning Desert Safari adventure! Experience the thrill of quad biking across breathtaking dunes, enjoy a serene camel ride through stunning landscapes.",
+        "duration": "3 days 2 nights",
+        "guests": "Per persons",
+        "price": 700,
+        "currency": "AED",
+        "image": "assets/images/destinations/camel.jpg",
+        "badge": null,
+        "rating": 5,
+        "link": "tour-details",
+        "description2": "Set off on the ultimate Morning Desert Safari adventure! Feel the adrenaline as you ride a quad bike across the towering dunes, take a tranquil camel ride through picturesque landscapes, and experience the exhilaration of dune bashing in a 4x4 Land Cruiser or Nissan Patrol.With convenient pickup from your hotel or apartment, our expert safari guides ensure an unforgettable journey. Snap stunning photos of the desert’s breathtaking beauty, glide down the dunes with exciting sandboarding, and stay refreshed with complimentary water bottles. Don’t miss this chance to explore Dubai’s magnificent deserts—book your adventure today!",
+        "image1": "assets/images/destinations/camel1.jpg",
+        "image2": "assets/images/destinations/camel2.jpg",
+        "image3": "assets/images/destinations/camel4.jpg",
+        "image4": "assets/images/destinations/camel3.jpg",
+        "image5": "assets/images/destinations/camel5.jpg",
+        "title2": "Morning Desert Safari with Quad Bike and Camel Ride Dubai",
+        "pick": {
+          "pickup_and_drop_off": "Morning desert safari packages that include convenient pick-up and drop-off services from hotels in Dubai. This ensures hassle-free transportation to and from the desert.",
+          "dune_bashing": "The thrill of dune bashing is one of the highlights of a desert safari, in which skilled drivers maneuver 4x4 vehicles over sand dunes.",
+          "sand_boarding": "Morning desert safari packages include sand boarding, which involves sliding down sand dunes on specially designed boards, similar to snowboarding.",
+          "professional_guide": "An experienced guide often accompanies the safari to provide information about the desert environment, local customs, and answer participants' questions.",
+          "duration": "Morning desert safaris last for 3-4 hours, so participants can experience the beauty of the desert without taking up the entire day.",
+          "desert_activities": "You can include additional desert activities, such as camel ride, dune buggy rides, or falconry displays, to provide participants with a variety of experiences.",
+          "quad_biking": "Experience an adrenaline-fueled adventure on a quad bike as you zip across the sand dunes, exploring the vast expanse of the desert.",
+          "camel_riding": "Enjoy a scenic camel ride in the Lahbab Desert, perfect for capturing stunning photos and soaking in the tranquil beauty of the dunes.",
+          "refreshments": "Water bottles are typically provided to keep participants hydrated and energized during the safari.",
+          "safety_equipment": "Participants are usually provided with safety equipment such as seat belts in vehicles and helmets for certain activities such as quad biking and dune buggy rides.",
+          "photography_opportunities": "While on safari, tourists have ample opportunities to capture stunning photographs of the desert landscape, camel rides, and other activities."
+        },
+        "excluded": {
+          "breakfast": "Before or after the safari, participants are usually responsible for their own meals. Breakfast is usually not included in morning desert safari packages.",
+          "optional_activities": "The standard safari package usually does not include optional activities such as souvenir shopping, photography services, or additional adventure activities.",
+          "personal_expenses": "Souvenirs, personal purchases, tips for guides or drivers, and any other personal expenses are not typically included in safari prices.",
+          "outside_designated_areas": "If the participant's hotel is outside the designated pick-up/drop-off areas, transport to and from the safari starting point may incur additional charges.",
+          "guide_gratuities": "Tipping the safari guide and driver is not typically included in the safari price and is at the discretion of the participants.",
+          "language_specific_guides": "There may be an additional fee if participants require a guide who speaks a language other than the safari's default language."
+        }
+      }
+     
+     
+      
+     
+
+    ],
+    "pagination": {
+      "currentPage": 1,
+      "totalPages": 3,
+      "toursPerPage": 3
+    }
+  }
+  

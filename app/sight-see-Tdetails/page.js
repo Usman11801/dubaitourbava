@@ -225,9 +225,9 @@ const page = () => {
         <div key={key} className="pickup-section">
           <div className="pickup-logo-text">
             <div>
-              <h7 style={{ fontWeight: 'bold', color: '#303030' }}>
+              <h6 style={{ fontWeight: 'bold', color: '#303030' }}>
                 {key.replace(/_/g, ' ').toUpperCase()}
-              </h7>
+              </h6>
               <p>{description || `No ${key.replace(/_/g, ' ')} details available.`}</p>
             </div>
           </div>
@@ -244,9 +244,9 @@ const page = () => {
         <div key={key} className="pickup-section">
           <div className="pickup-logo-text">
             <div>
-              <h7 style={{ fontWeight: 'bold', color: '#303030' }}>
+              <h6 style={{ fontWeight: 'bold', color: '#303030' }}>
                 {key.replace(/_/g, ' ').toUpperCase()}
-              </h7>
+              </h6>
               <p>{description || `No ${key.replace(/_/g, ' ')} details available.`}</p>
             </div>
           </div>

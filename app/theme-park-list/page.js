@@ -66,9 +66,9 @@ const Page = () => {
                     </h5>
                     <p>{tour.description}</p>
                     <ul className="blog-meta">
-                      <li>
+                      {/* <li>
                         <i className="far fa-clock" /> {tour.duration}
-                      </li>
+                      </li> */}
                       <li>
                         <i className="far fa-user" /> {tour.guests} guest
                       </li>

@@ -5,7 +5,7 @@ import ReveloLayout from "@/layout/ReveloLayout";
 import Link from "next/link";
 import { useState, useEffect } from "react";
 import { Accordion } from "react-bootstrap";
-import toursData from "../theme-park-list/toursData.json";
+import toursData from "../buggy-bike-list/toursData.json";
 
 const page = () => {
   const [id, setId] = useState(null);
@@ -60,7 +60,6 @@ const page = () => {
       answer: "There is no limit to that as we have many cars and can arrange many more if needed. Also no matter how many people are there in the safari only 6 people get in to a 4x4 ( including the driver ) so the size of the group does not effect the quality of the tour."
     },
   ];
- 
   const [active, setActive] = useState("collapse0");
 
   const [active2, setActive2] = useState("collapse0");
@@ -360,8 +359,8 @@ const page = () => {
               <h3>Maps</h3>
               <div className="tour-map mt-30 mb-50">
                 <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d28917.758162586367!2d55.270783!3d25.204849!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sbd!4v1706508986625!5m2!1sen!2sbd" 
-                    style={{ border: 0, width: "100%" }}
+                   src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d28917.758162586367!2d55.270783!3d25.204849!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sbd!4v1706508986625!5m2!1sen!2sbd" 
+                   style={{ border: 0, width: "100%" }}
                   allowFullScreen=""
                   loading="lazy"
                   referrerPolicy="no-referrer-when-downgrade"
@@ -820,15 +819,13 @@ const page = () => {
                   <ul className="list-style-one">
                     <li>
                       <i className="far fa-envelope" />{" "}
-                      <a href="emilto:urbanadventuretourism@gmail.com
-">
-                      urbanadventuretourism@gmail.com
-
+                      <a href="emilto:helpxample@gmail.com">
+                        helpxample@gmail.com
                       </a>
                     </li>
                     <li>
                       <i className="far fa-phone-volume" />{" "}
-                      <a href="callto:+971528067631">+971528067631</a>
+                      <a href="callto:+000(123)45688">+000 (123) 456 88</a>
                     </li>
                   </ul>
                 </div>

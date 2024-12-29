@@ -6,7 +6,7 @@ import Subscribe from "@/components/Subscribe";
 import TourSidebar from "@/components/TourSidebar";
 import ReveloLayout from "@/layout/ReveloLayout";
 import Link from "next/link";
-import toursData from "../../app/tour-list/toursData.json";
+import toursData from "../../app/buggy-bike-list/toursData.json";
 
 const ITEMS_PER_PAGE = 6;
 
@@ -69,9 +69,9 @@ const Page = () => {
                       {/* <li>
                         <i className="far fa-clock" /> {tour.duration}
                       </li> */}
-                      <li>
-                        <i className="far fa-user" /> {tour.guests} 
-                      </li>
+                      {/* <li>
+                        <i className="far fa-user" /> {tour.guests}
+                      </li> */}
                     </ul>
                     <div className="destination-footer">
                       <span className="price">
@@ -79,7 +79,7 @@ const Page = () => {
                       </span>
                       <Link
                         href={{
-                          pathname: '/tour-details',
+                          pathname: '/buggy-bike-details',
                           query: { id: tour.id },
                         }}
                         // href={tour.link}
