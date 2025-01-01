@@ -52,15 +52,15 @@ const page = () => {
       title: "4. Can Kids Drive Quad Bikes?",
       answer: "Yes we have special quad bikes which are designed for the young kids."
     },
-    {
-      id: 5,
-      title: "5. Is there Veg Food Also?",
-      answer: "Yes, vegetarian food options are available as part of the safari."
-    },
+    // {
+    //   id: 5,
+    //   title: "5. Is there Veg Food Also?",
+    //   answer: "Yes, vegetarian food options are available as part of the safari."
+    // },
     {
       id: 6,
       title: "6. What is the maximum number of people who can go to Desert Safari?",
-      answer: "There is no limit to that as we have many cars and can arrange many more if needed. Also no matter how many people are there in the safari only 6 people get in to a 4x4 ( including the driver ) so the size of the group does not effect the quality of the tour."
+      answer: "There is no limit to that as we have many cars and can arrange many more if needed. Also no matter how many people are there in the safari only 6 to 7 people get in to a 4x4 ( including the driver ) so the size of the group does not effect the quality of the tour."
     },
   ];
   const [active2, setActive2] = useState("collapse0");

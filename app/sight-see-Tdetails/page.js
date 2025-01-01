@@ -31,34 +31,44 @@ const page = () => {
   const faqItem = [
     {
       id: 1,
-      title: "1. Do I get picked from hotel when I book a Desert Safari Tour?",
-      answer: "Yes we shall pick you from your hotel / residence for Dubai Desert Safari. And there is no additional charges for Pick it's included in the Price ."
+      title: "7. How long is the City Tour of Dubai?",
+      answer: "The Dubai City Tour typically lasts 4 to 5 hours. It covers famous landmarks like the Burj Khalifa, the Dubai Mall, the Palm Jumeirah, and the Dubai Marina."
     },
     {
       id: 2,
-      title: "2. How long is the Desert Safari?",
-      answer: "Dubai Desert Safari is 6 hours tour in Evening. 4 Hours tour is you go for Morning Desert Safari. And if you go for Over Night Desert Safari it will be around 16 Hours Tour."
+      title: "8. Can I customize my Dubai City Tour?",
+      answer: "Yes, you can customize your city tour according to your preferences. Let us know which places you'd like to visit, and we will adjust the itinerary."
     },
     {
       id: 3,
-      title: "3. How long is Quad Biking?",
-      answer: "Quad biking will be for 20 to 30 minutes."
+      title: "9. Will I be picked up from my hotel for the Dubai City Tour?",
+      answer: "Yes, we provide hotel pick-up and drop-off services for all Dubai City Tours. There are no additional charges for this service."
     },
     {
       id: 4,
-      title: "4. Can Kids Drive Quad Bikes?",
-      answer: "Yes we have special quad bikes which are designed for the young kids."
+      title: "10. What are the highlights of the Dubai City Tour?",
+      answer: "The highlights include a visit to the Burj Khalifa (the world's tallest building), Dubai Mall, Palm Jumeirah, Dubai Marina, Jumeirah Beach, and the Dubai Creek."
     },
     {
       id: 5,
-      title: "5. Is there Veg Food Also?",
-      answer: "Yes, vegetarian food options are available as part of the safari."
+      title: "11. Is the Dubai City Tour suitable for families with children?",
+      answer: "Yes, the Dubai City Tour is suitable for families. The tour includes several attractions that are enjoyable for both adults and children."
     },
     {
       id: 6,
-      title: "6. What is the maximum number of people who can go to Desert Safari?",
-      answer: "There is no limit to that as we have many cars and can arrange many more if needed. Also no matter how many people are there in the safari only 6 people get in to a 4x4 ( including the driver ) so the size of the group does not effect the quality of the tour."
+      title: "12. Can I book a private City Tour in Dubai?",
+      answer: "Yes, private city tours are available. You can book a private vehicle for a more personalized experience, and we'll tailor the tour to suit your interests."
     },
+    {
+      id: 7,
+      title: "13. Is it possible to combine a Desert Safari with a City Tour?",
+      answer: "Yes, many of our customers prefer to combine both a Desert Safari and a City Tour for a comprehensive Dubai experience. We can arrange a special package for you."
+    },
+    {
+      id: 8,
+      title: "14. What time of the day is best for the Dubai City Tour?",
+      answer: "The best time for the city tour is during the morning or late afternoon to avoid the midday heat. However, the tour can be customized to fit your schedule."
+    }
   ];
   const [active, setActive] = useState("collapse0");
 

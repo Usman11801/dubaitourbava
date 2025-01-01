@@ -59,7 +59,7 @@ const Page = () => {
                     </div>
                     <h5>
                       <Link href={{
-                        pathname: '/tour-details',
+                        pathname: '/buggy-bike-details',
                         query: { id: tour?.id },
                       }}>
                         {tour.title}</Link>

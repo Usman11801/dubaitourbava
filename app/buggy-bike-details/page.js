@@ -49,11 +49,11 @@ const page = () => {
       title: "4. Can Kids Drive Quad Bikes?",
       answer: "Yes we have special quad bikes which are designed for the young kids."
     },
-    {
-      id: 5,
-      title: "5. Is there Veg Food Also?",
-      answer: "Yes, vegetarian food options are available as part of the safari."
-    },
+    // {
+    //   id: 5,
+    //   title: "5. Is there Veg Food Also?",
+    //   answer: "Yes, vegetarian food options are available as part of the safari."
+    // },
     {
       id: 6,
       title: "6. What is the maximum number of people who can go to Desert Safari?",
