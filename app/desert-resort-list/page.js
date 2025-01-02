@@ -69,9 +69,9 @@ const Page = () => {
                       {/* <li>
                         <i className="far fa-clock" /> {tour.duration}
                       </li> */}
-                      <li>
+                      {/* <li>
                         <i className="far fa-user" /> {tour.guests} guest
-                      </li>
+                      </li> */}
                     </ul>
                     <div className="destination-footer">
                       <span className="price">

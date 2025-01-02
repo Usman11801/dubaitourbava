@@ -88,7 +88,7 @@
         "guests": "5-8 guest",
         "price": 900,
         "currency": "AED",
-        "image": "assets/images/destinations/bab al shams desert safari.jpeg",
+        "image": "assets/images/destinations/shams4.jpg",
         "badge": null,
         "rating": 5,
         "link": "tour-details",
@@ -465,7 +465,88 @@
           "optional_activities": "Dune bashing and quad biking are optional activities not included in the base package.",
           "meals": "Some packages include meals or snacks, while others do not. Please clarify this beforehand."
         }
+      },
+      {
+        "id": 16,
+        "title": "Private Desert Safari BBQ Dinner",
+        "location": "UAE",
+        "description": "Experience the allure of the Arabian desert with our exclusive Private Desert Safari BBQ Dinner. This adventure combines thrilling dune bashing, cultural experiences, and a sumptuous BBQ dinner under the stars, offering an unforgettable evening amidst the golden sands.",
+        "duration": "6 hours",
+        "guests": "Minimum 2 Persons",
+        "price": 800,
+        "currency": "AED",
+        "image": "assets/images/destinations/bbq3.jpg",
+        "badge": null,
+        "rating": 5,
+        "link": "tour-details",
+        "description2": "Join us for a private desert safari that begins with a comfortable pickup from your location in a luxury 4x4 vehicle. Your adventure starts with an exhilarating dune bashing session, navigating the mesmerizing dunes of the Arabian desert. As the sun sets, capture stunning photographs of the desert landscape bathed in golden hues. Upon arrival at our traditional Bedouin-style camp, immerse yourself in cultural activities such as henna painting, shisha smoking, and dressing in traditional Arabic attire. The evening culminates with a delectable BBQ dinner, featuring a variety of vegetarian and non-vegetarian dishes, accompanied by live entertainment including Tanoura and fire shows. After a memorable evening, you'll be escorted back to your accommodation, cherishing the enchanting desert memories.",
+        "image1": "https://images.pexels.com/photos/2233729/pexels-photo-2233729.jpeg",
+        "image2": "assets/images/destinations/bbq2.jpg",
+        "image3": "https://images.pexels.com/photos/2233729/pexels-photo-2233729.jpeg",
+        "image4": "assets/images/destinations/bbq3.jpg",
+        "image5": "assets/images/destinations/bbq.png",
+        "title2": "Private Desert Safari BBQ Dinner",
+        "pick": {
+          "transportation": "Private pickup and drop-off in a luxury 4x4 vehicle from your hotel or residence.",
+          "dune_bashing": "Thrilling dune bashing experience with a professional driver.",
+          "sunset_photography": "Opportunity to capture stunning sunset views over the desert.",
+          "henna_painting": "Traditional henna tattooing available at the camp.",
+          "shisha": "Access to a shisha smoking area with a variety of flavors.",
+          "arabic_attire": "Dress in traditional Arabic costumes for photographs.",
+          "bbq_dinner": "Sumptuous BBQ dinner with vegetarian and non-vegetarian options.",
+          "live_entertainment": "Live performances including Tanoura and fire shows.",
+          "refreshments": "Unlimited soft drinks, water, tea, and coffee."
+        },
+        "excluded": {
+          "alcoholic_beverages": "Alcoholic drinks are not included but may be available for purchase at the camp.",
+          "quad_biking": "Quad biking is available as an optional activity at an additional cost.",
+          "personal_expenses": "Any additional purchases made at the camp, such as souvenirs, are not included.",
+          "gratuities": "Tips for guides and drivers are not included and are at your discretion.",
+          "special_dietary_requests": "While efforts are made to accommodate special dietary needs, specific requests should be communicated in advance."
+        }
+      },
+      {
+        "id": 17,
+        "title": "Desert Safari with Overnight Stay",
+        "location": "UAE",
+        "description": "Experience the enchantment of the Arabian desert with our Desert Safari with Overnight Stay package. This adventure combines thrilling activities, cultural immersion, and a serene overnight camping experience under the starry desert sky.",
+        "duration": "18 hours",
+        "guests": "Minimum 2 Persons",
+        "price": 500,
+        "currency": "AED",
+        "image": "assets/images/destinations/overnight1.jpg",
+        "badge": null,
+        "rating": 5,
+        "link": "tour-details",
+        "description2": "Join us for an unforgettable Desert Safari with Overnight Stay. Begin your adventure with thrilling dune bashing and sandboarding, followed by a traditional camel ride. Witness the breathtaking desert sunset and immerse yourself in Bedouin culture at our authentic camp. Indulge in a delicious BBQ dinner, enjoy live entertainment, and relax with stargazing before retiring to your comfortable tent for the night. Wake up to a refreshing morning and a delightful breakfast to complete your desert experience.",
+        "image1": "assets/images/destinations/overnight1.jpg",
+        "image2": "assets/images/destinations/overnight3.jpg",
+        "image3": "assets/images/destinations/overnight2.jpg",
+        "image4": "assets/images/destinations/overnight4.jpg",
+        "image5": "https://images.pexels.com/photos/4591254/pexels-photo-4591254.jpeg",
+        "title2": "Desert Safari with Overnight Stay",
+        "pick": {
+          "transportation": "Private pickup and drop-off in a 4x4 vehicle from your hotel or residence.",
+          "dune_bashing": "Exhilarating dune bashing experience with an expert driver.",
+          "sandboarding": "Slide down the sandy dunes on a sandboard.",
+          "camel_ride": "Traditional camel ride through the desert.",
+          "sunset_photography": "Capture the stunning desert sunset.",
+          "bedouin_camp": "Immerse yourself in Bedouin culture at an authentic camp.",
+          "bbq_dinner": "Enjoy a sumptuous BBQ dinner with vegetarian and non-vegetarian options.",
+          "live_entertainment": "Watch live performances, including traditional dances.",
+          "stargazing": "Relax under the starry desert sky.",
+          "overnight_stay": "Stay overnight in a comfortable tent with provided bedding.",
+          "breakfast": "Wake up to a delightful morning breakfast."
+        },
+        "excluded": {
+          "alcoholic_beverages": "Alcoholic drinks are not included but may be available for purchase at the camp.",
+          "quad_biking": "Quad biking is available as an optional activity at an additional cost.",
+          "personal_expenses": "Additional purchases such as souvenirs are not included.",
+          "gratuities": "Tips for guides and drivers are not included and are at your discretion."
+        }
       }
+      
+     
      
 
     ],

@@ -11,8 +11,9 @@ const Booking = ({ tour }) => {
 
     const handleChange = (event) => {
         setSelectedValue(event.target.value);
-      };
-      console.log('value is here' , selectedValue)
+    };
+    console.log('value is here', selectedValue)
+    
     return (
         <>
             <div className="col-lg-4 col-md-8 col-sm-10 rmt-75">
@@ -59,17 +60,13 @@ const Booking = ({ tour }) => {
                             <ul className="tickets clearfix">
                                 <li>
                                     Adult (18- years) <span className="price">{tour?.price / 2}</span>
-                                    <select
-                                        id="dropdown"
-                                        value={selectedValue}
-                                        onChange={handleChange}
-                                    >
+                                    <select id="adult-tickets" value={selectedValue} onChange={handleChange}>
                                         <option value="1">1</option>
                                         <option value="2">2</option>
                                         <option value="3">3</option>
                                     </select>
                                 </li>
-                                <li>
+                                {/* <li>
                                     Adult (18+ years) <span className="price">{tour?.price}</span>
                                     <select
                                         name="18+"
@@ -79,7 +76,7 @@ const Booking = ({ tour }) => {
                                         <option value="2">02</option>
                                         <option value="3">03</option>
                                     </select>
-                                </li>
+                                </li> */}
                             </ul>
                             {/* <hr className="mb-25" /> */}
                             {/* <h6>Add Extra:</h6>
