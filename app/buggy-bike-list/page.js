@@ -25,7 +25,7 @@ const Page = () => {
 
   return (
     <ReveloLayout>
-      <Banner pageTitle={"Desert Safari"} pageName={"Desert Safari"} search />
+      <Banner pageTitle={"Buggy & Quad Bikes"} pageName={"Tour List"} search />
       <section className="tour-list-page py-100 rel z-1">
         <div className="container">
           <div className="row">
