@@ -49,15 +49,15 @@ const page = () => {
                   </div>
                   <div className="col-md-8">
                     <p>
-                    At Urban Adventure Tourism, we are passionate about curating the best adventures and tours for you across the UAE. From Dubai to Abu Dhabi and Fujairah, whether you're seeking thrilling experiences or exploring rich traditions, we guarantee a once-in-a-lifetime journey. Our customer feedback speaks volumes about the exceptional vacation packages we offer, making us one of the leading tourism providers in Dubai. We specialize in Dubai tours and travel services across all Emirates with unmatched expertise.
+                      At Urban Adventure Tourism, we are passionate about curating the best adventures and tours for you across the UAE. From Dubai to Abu Dhabi and Fujairah, whether you're seeking thrilling experiences or exploring rich traditions, we guarantee a once-in-a-lifetime journey. Our customer feedback speaks volumes about the exceptional vacation packages we offer, making us one of the leading tourism providers in Dubai. We specialize in Dubai tours and travel services across all Emirates with unmatched expertise.
 
-Planning a Morning Desert Safari? Start your adventure with Urban Adventure Tourism! We proudly offer the most economical and value-packed Dubai tour packages tailored for our valued customers. Our excursions seamlessly blend modern culture with historical experiences, adventure with premium shopping, and vibrant entertainment. All you need to do is book your Morning Desert Safari through our website or contact our professional tour operators in Dubai.
+                      Planning a Morning Desert Safari? Start your adventure with Urban Adventure Tourism! We proudly offer the most economical and value-packed Dubai tour packages tailored for our valued customers. Our excursions seamlessly blend modern culture with historical experiences, adventure with premium shopping, and vibrant entertainment. All you need to do is book your Morning Desert Safari through our website or contact our professional tour operators in Dubai.
 
-In addition to our Dubai tour packages, we provide fantastic offers for Abu Dhabi, Fujairah, Sharjah, and Ajman. Whether you’re looking for an action-packed desert expedition or a serene traditional desert camping experience, we deliver the most comprehensive vacation packages in Dubai and beyond. Plus, we ensure VIP treatment for all our clients during Dubai excursions or tours in any of the Emirates.
+                      In addition to our Dubai tour packages, we provide fantastic offers for Abu Dhabi, Fujairah, Sharjah, and Ajman. Whether you’re looking for an action-packed desert expedition or a serene traditional desert camping experience, we deliver the most comprehensive vacation packages in Dubai and beyond. Plus, we ensure VIP treatment for all our clients during Dubai excursions or tours in any of the Emirates.
 
-Many of our exclusive deals can’t be found anywhere else! Save time and book with Urban Adventure Tourism to enjoy premium services at affordable prices. Our tour operators ensure your booking process is simple, smooth, and stress-free.
+                      Many of our exclusive deals can’t be found anywhere else! Save time and book with Urban Adventure Tourism to enjoy premium services at affordable prices. Our tour operators ensure your booking process is simple, smooth, and stress-free.
 
-So, what are you waiting for? Choose Urban Adventure Tourism for the best-rated vacation packages and unforgettable experiences in the UAE. Feel free to reach out to our tour operators for more details and let us make your dream adventure a reality!
+                      So, what are you waiting for? Choose Urban Adventure Tourism for the best-rated vacation packages and unforgettable experiences in the UAE. Feel free to reach out to our tour operators for more details and let us make your dream adventure a reality!
                     </p>
                     <ul className="list-style-two mt-35">
                       <li>Experience Agency</li>
@@ -209,7 +209,7 @@ So, what are you waiting for? Choose Urban Adventure Tourism for the best-rated 
               data-aos-offset={50}
             >
               <div className="about-us-page">
-                <img src="assets/images/about/about-page.jpg" alt="About" />
+                <img src="https://images.pexels.com/photos/442579/pexels-photo-442579.jpeg" alt="About" />
               </div>
             </div>
           </div>

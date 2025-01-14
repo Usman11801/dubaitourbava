@@ -8,112 +8,45 @@ const TourSidebar = () => {
   return (
     <div className="col-lg-3 col-md-6 col-sm-10 rmb-75">
       <div className="shop-sidebar mb-30">
-        <div
-          className="widget widget-filter"
-          data-aos="fade-up"
-          data-aos-delay={50}
-          data-aos-duration={1500}
-          data-aos-offset={50}
-        >
-          <h6 className="widget-title">Filter by Price</h6>
-          <div className="price-filter-wrap">
-            <div className="price-slider-range">
-              <Slider
-                value={value}
-                range
-                onChange={(e) => setValue(e)}
-                trackStyle={{ backgroundColor: "#63AB45" }}
-                handleStyle={{
-                  borderColor: "#63AB45",
-                  backgroundColor: "#63AB45",
-                }}
-                railStyle={{ backgroundColor: "rgba(99, 171, 69,0.2)" }}
-              />
-            </div>
-            <div className="price">
-              <span>Price </span>
-              {/* <input type="text" value={value[0]} id="price" readOnly="" /> */}
-              <p className="mb-0 fw-bold">
-                ${value[0]} - ${value[1]}
-              </p>
-            </div>
-          </div>
-        </div>
+      
         <div
           className="widget widget-activity"
           data-aos="fade-up"
           data-aos-duration={1500}
           data-aos-offset={50}
         >
-          <h6 className="widget-title">By Activities</h6>
+          <h6 className="widget-title"> popular Tours</h6>
           <ul className="radio-filter">
             <li>
-              <input
-                className="form-check-input"
-                type="radio"
-                defaultChecked=""
-                name="ByActivities"
-                id="activity1"
-              />
+             
               <label htmlFor="activity1">
-                Sea Beach <span>18</span>
+                Desert Safari <span>15</span>
               </label>
             </li>
             <li>
-              <input
-                className="form-check-input"
-                type="radio"
-                name="ByActivities"
-                id="activity2"
-              />
+           
               <label htmlFor="activity2">
-                Car Parking <span>29</span>
+                City Tours <span>10</span>
               </label>
             </li>
             <li>
-              <input
-                className="form-check-input"
-                type="radio"
-                name="ByActivities"
-                id="activity3"
-              />
+             
               <label htmlFor="activity3">
-                Laundry Service <span>23</span>
+                Quad & buggy ride <span>5</span>
               </label>
             </li>
             <li>
-              <input
-                className="form-check-input"
-                type="radio"
-                name="ByActivities"
-                id="activity4"
-              />
+         
               <label htmlFor="activity4">
-                Outdoor Seating <span>25</span>
+                Theme Park <span>4</span>
               </label>
             </li>
             <li>
-              <input
-                className="form-check-input"
-                type="radio"
-                name="ByActivities"
-                id="activity5"
-              />
-              <label htmlFor="activity5">
-                Reservations <span>26</span>
-              </label>
-            </li>
-            <li>
-              <input
-                className="form-check-input"
-                type="radio"
-                name="ByActivities"
-                id="activity6"
-              />
-              <label htmlFor="activity6">
-                Smoking Allowed <span>28</span>
-              </label>
-            </li>
+         
+         <label htmlFor="activity4">
+           Desert Resort <span>1</span>
+         </label>
+       </li>
           </ul>
         </div>
         <div
@@ -125,13 +58,7 @@ const TourSidebar = () => {
           <h6 className="widget-title">By Reviews</h6>
           <ul className="radio-filter">
             <li>
-              <input
-                className="form-check-input"
-                type="radio"
-                defaultChecked=""
-                name="ByReviews"
-                id="review1"
-              />
+            
               <label htmlFor="review1">
                 <span className="ratting">
                   <i className="fas fa-star" />
@@ -143,12 +70,8 @@ const TourSidebar = () => {
               </label>
             </li>
             <li>
-              <input
-                className="form-check-input"
-                type="radio"
-                name="ByReviews"
-                id="review2"
-              />
+
+        
               <label htmlFor="review2">
                 <span className="ratting">
                   <i className="fas fa-star" />
@@ -160,12 +83,7 @@ const TourSidebar = () => {
               </label>
             </li>
             <li>
-              <input
-                className="form-check-input"
-                type="radio"
-                name="ByReviews"
-                id="review3"
-              />
+ 
               <label htmlFor="review3">
                 <span className="ratting">
                   <i className="fas fa-star" />
@@ -177,12 +95,7 @@ const TourSidebar = () => {
               </label>
             </li>
             <li>
-              <input
-                className="form-check-input"
-                type="radio"
-                name="ByReviews"
-                id="review4"
-              />
+
               <label htmlFor="review4">
                 <span className="ratting">
                   <i className="fas fa-star" />
@@ -194,12 +107,7 @@ const TourSidebar = () => {
               </label>
             </li>
             <li>
-              <input
-                className="form-check-input"
-                type="radio"
-                name="ByReviews"
-                id="review5"
-              />
+
               <label htmlFor="review5">
                 <span className="ratting">
                   <i className="fas fa-star" />
@@ -212,12 +120,12 @@ const TourSidebar = () => {
             </li>
           </ul>
         </div>
-        <div
+        {/* <div
           className="widget widget-languages"
           data-aos="fade-up"
           data-aos-duration={1500}
           data-aos-offset={50}
-        >
+          >
           <h6 className="widget-title">By Languages</h6>
           <ul className="radio-filter">
             <li>
@@ -276,13 +184,13 @@ const TourSidebar = () => {
               <label htmlFor="language6">French</label>
             </li>
           </ul>
-        </div>
-        <div
+        </div> */}
+        {/* <div
           className="widget widget-duration"
           data-aos="fade-up"
           data-aos-duration={1500}
           data-aos-offset={50}
-        >
+           >
           <h6 className="widget-title">Duration</h6>
           <ul className="radio-filter">
             <li>
@@ -332,7 +240,10 @@ const TourSidebar = () => {
               <label htmlFor="duration5">Multi days</label>
             </li>
           </ul>
-        </div>
+        </div> */}
+
+
+
         <div
           className="widget widget-tour"
           data-aos="fade-up"

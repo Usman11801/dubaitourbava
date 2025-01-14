@@ -10,7 +10,12 @@ const Booking = ({ tour }) => {
 
 
     const handleChange = (event) => {
+        event.preventDefault(); 
         setSelectedValue(event.target.value);
+    };
+    const handleSubmit = (event) => {
+        event.preventDefault(); // Prevents navigation
+        console.log("Booking data submitted");
     };
     console.log('value is here', selectedValue)
     
@@ -25,7 +30,7 @@ const Booking = ({ tour }) => {
                         data-aos-offset={50}
                     >
                         <h5 className="widget-title">Tour Booking</h5>
-                        <form action="#">
+                        <form onSubmit={handleSubmit}>
                             <div className="date mb-25">
                                 <b>From Date</b>
                                 <input type="date" />
@@ -59,15 +64,15 @@ const Booking = ({ tour }) => {
                             <h6>Tickets:</h6>
                             <ul className="tickets clearfix">
                                 <li>
-                                    Adult (18- years) <span className="price">{tour?.price / 2}</span>
+                                    Child   <span className="price">{tour?.price / 2}</span>
                                     <select id="adult-tickets" value={selectedValue} onChange={handleChange}>
                                         <option value="1">1</option>
                                         <option value="2">2</option>
                                         <option value="3">3</option>
                                     </select>
                                 </li>
-                                {/* <li>
-                                    Adult (18+ years) <span className="price">{tour?.price}</span>
+                                <li>
+                                    Adult  <span className="price">{tour?.price}</span>
                                     <select
                                         name="18+"
                                         id="18+"
@@ -76,7 +81,7 @@ const Booking = ({ tour }) => {
                                         <option value="2">02</option>
                                         <option value="3">03</option>
                                     </select>
-                                </li> */}
+                                </li>
                             </ul>
                             {/* <hr className="mb-25" /> */}
                             {/* <h6>Add Extra:</h6>
@@ -109,13 +114,15 @@ const Booking = ({ tour }) => {
                             <h6>
                                 Total: <span className="price">{tour?.price}</span>
                             </h6>
-                            <button
-                                type="submit"
+                           <div>
+                           <button
+                                type=""
                                 className="theme-btn style-two w-100 mt-15 mb-5"
                             >
                                 <span data-hover="Book Now">Book Now</span>
                                 <i className="fal fa-arrow-right" />
                             </button>
+                           </div>
                             <div className="text-center">
                                 <Link href="contact">Need some help?</Link>
                             </div>
@@ -129,16 +136,17 @@ const Booking = ({ tour }) => {
                     >
                         <h5 className="widget-title">Need Help?</h5>
                         <ul className="list-style-one">
-                            <li>
-                                <i className="far fa-envelope" />{" "}
-                                <a href="emilto:helpxample@gmail.com">
-                                    helpxample@gmail.com
-                                </a>
-                            </li>
-                            <li>
-                                <i className="far fa-phone-volume" />{" "}
-                                <a href="callto:+000(123)45688">+000 (123) 456 88</a>
-                            </li>
+                        <li>
+                      <i className="far fa-envelope" />{" "}
+                      <a href="emilto:urbanadventuretourism@gmail.com">
+                      urbanadventuretourism@gmail.com
+
+                      </a>
+                    </li>
+                    <li>
+                      <i className="far fa-phone-volume" />{" "}
+                      <a href="callto:+971528067631">+971528067631</a>
+                    </li>
                         </ul>
                     </div>
                     <div

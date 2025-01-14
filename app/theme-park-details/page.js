@@ -818,10 +818,9 @@ const page = () => {
                 >
                   <h5 className="widget-title">Need Help?</h5>
                   <ul className="list-style-one">
-                    <li>
+                  <li>
                       <i className="far fa-envelope" />{" "}
-                      <a href="emilto:urbanadventuretourism@gmail.com
-">
+                      <a href="emilto:urbanadventuretourism@gmail.com">
                       urbanadventuretourism@gmail.com
 
                       </a>

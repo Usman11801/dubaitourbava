@@ -820,13 +820,14 @@ const page = () => {
                   <ul className="list-style-one">
                     <li>
                       <i className="far fa-envelope" />{" "}
-                      <a href="emilto:helpxample@gmail.com">
-                        helpxample@gmail.com
+                      <a href="emilto:urbanadventuretourism@gmail.com">
+                      urbanadventuretourism@gmail.com
+
                       </a>
                     </li>
                     <li>
                       <i className="far fa-phone-volume" />{" "}
-                      <a href="callto:+000(123)45688">+000 (123) 456 88</a>
+                      <a href="callto:+971528067631">+971528067631</a>
                     </li>
                   </ul>
                 </div>

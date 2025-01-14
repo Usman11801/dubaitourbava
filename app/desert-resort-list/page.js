@@ -129,7 +129,7 @@ const Page = () => {
           </div>
         </div>
       </section>
-      <Subscribe />
+      {/* <Subscribe /> */}
     </ReveloLayout>
   );
 };
