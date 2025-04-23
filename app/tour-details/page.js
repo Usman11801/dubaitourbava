@@ -217,74 +217,42 @@ const page = () => {
                 <div className="row pb-55">
                   <div className="">
                     <div className="tour-include-exclude mt-30">
-                      <h5>Included or excluded</h5>
-                      <div className="row pb-55">
-                        <div className="">
-                          <div className="tour-include-exclude mt-30">
-                            <h5>Included</h5>
-                            {Object.entries(tour?.pick || {}).map(([key, description]) => (
-                              <div key={key} className="pickup-section">
-                                <div className="pickup-logo-text">
-                                  <div>
-                                    <h6 style={{ fontWeight: 'bold', color: '#303030' }}>
-                                      {key.replace(/_/g, ' ').toUpperCase()}
-                                    </h6>
-                                    <p>{description || `No ${key.replace(/_/g, ' ')} details available.`}</p>
-                                  </div>
-                                </div>
-                              </div>
-                            ))}
-                          </div>
-                        </div>
-                      </div>
-                      <div className="row pb-55">
-                        <div className="">
-                          <div className="tour-include-exclude mt-30">
-                            <h5>Excluded</h5>
-                            {Object.entries(tour?.excluded || {}).map(([key, description]) => (
-                              <div key={key} className="pickup-section">
-                                <div className="pickup-logo-text">
-                                  <div>
-                                    <h6 style={{ fontWeight: 'bold', color: '#303030' }}>
-                                      {key.replace(/_/g, ' ').toUpperCase()}
-                                    </h6>
-                                    <p>{description || `No ${key.replace(/_/g, ' ')} details available.`}</p>
-                                  </div>
-                                </div>
-                              </div>
-                            ))}
-                          </div>
-                        </div>
-                      </div>
-
-                      {/* <ul className="list-style-one check mt-25">
-                        <li>
-                          <i className="far fa-check" />
-                          
-                          {tour?.pick}
-                        </li>
-                        <li>
-                          <i className="far fa-check" /> 1 Meal Per Day
-                        </li>
-                        <li>
-                          <i className="far fa-check" /> Cruise Dinner &amp;
-                          Music Event
-                        </li>
-                        <li>
-                          <i className="far fa-check" /> Visit 7 Best Places in
-                          the City
-                        </li>
-                        <li>
-                          <i className="far fa-check" /> Bottled Water on Buses
-                        </li>
-                        <li>
-                          <i className="far fa-check" /> Transportation Luxury
-                          Tour Bus
-                        </li>
-                      </ul> */}
+                      <h5>Package Inclusions</h5>
+                      <ul className="list-style-one check mt-25">
+                        {tour?.inclusions && Object.entries(tour.inclusions).map(([key, value], index) => (
+                          <li key={index}>
+                            <i className="far fa-check" />
+                            {value}
+                          </li>
+                        ))}
+                      </ul>
                     </div>
                   </div>
-
+                </div>
+                <div className="row pb-55">
+                  <div className="">
+                    <div className="tour-include-exclude mt-30">
+                      <h5>Additional Information</h5>
+                      <ul className="list-style-one check mt-25">
+                        {tour?.additional_info && Object.entries(tour.additional_info).map(([key, value], index) => {
+                          if (Array.isArray(value)) {
+                            return value.map((item, i) => (
+                              <li key={`${index}-${i}`}>
+                                <i className="far fa-check" />
+                                {item}
+                              </li>
+                            ));
+                          }
+                          return (
+                            <li key={index}>
+                              <i className="far fa-check" />
+                              {value}
+                            </li>
+                          );
+                        })}
+                      </ul>
+                    </div>
+                  </div>
                 </div>
               </div>
               {/* <h3>Activities</h3>
