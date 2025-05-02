@@ -81,6 +81,9 @@ const Menu = () => {
                 <li>
                   <Link href="buggy-bike-list">Buggy & Quad Bikes</Link>
                 </li>
+                <li>
+                  <Link href="private-tour-list">Private Tour</Link>
+                </li>
                  <li>
               
             </li>

@@ -1,0 +1,52 @@
+{
+    "tours": [
+      {
+        "id": 1,
+        "image": "assets/images/destinations/dhabi1.jpg",
+        "title": "Private Abu Dhabi City Tour",
+        "location": "UAE",
+        "description": " Discover the best of Abu Dhabi as we take you to iconic landmarks like the breathtaking Sheikh Zayed Grand Mosque, the luxurious Emirates Palace Hotel, and the vibrant Heritage Village.",
+        "duration": "3 days 2 nights",
+        "guests": "5-8 guest",
+        "price": 1100,
+        "currency": "AED",
+        "image1": "assets/images/destinations/dhabi1.jpg",
+        "image2": "assets/images/destinations/dhabi2.jpg",
+        "image3": "assets/images/destinations/dhabi3.jpg",
+        "image4": "assets/images/destinations/dhabi4.jpg",
+        "image5": "assets/images/destinations/dhabi5.jpg",
+        "description2": "Discover the ultimate Abu Dhabi City Tour with convenient pickup and drop-off right from your location in Dubai! Travel in comfort and style as our professional drivers take you on a seamless journey in our spotless, well-maintained vehicles. Explore the best of Abu Dhabi, visiting iconic landmarks like the majestic Sheikh Zayed Grand Mosque, the opulent Emirates Palace Hotel, and the culturally rich Heritage Village. Savor the local charm with a stop at the Dates Market, and capture stunning photos outside the iconic Ferrari World. Embark on an unforgettable adventure in Abu Dhabi – a day full of memories awaits!",
+        "title2": "Abu Dhabi City Tour",
+        "inclusions": {
+          "pickup": "Pick from Your Home / Hotel",
+          "professional_guide": "Professional Guided Tour of Abu Dhabi",
+          "sheikh_zayed_mosque": "Sheikh Zayed Mosque (1 Hour 30 Minutes Stop)",
+          "emirates_palace": "Emirates Palace Hotel (VISIT)",
+          "heritage_village": "Herritage Village (VISIT)",
+          "jumeirah_etihad_tower": "Jumeirah Etihad Tower (Photo Stop)",
+          "sheikh_palace": "Photo stop at Sheikh's Palace",
+          "islamic_art_museum": "Islamic Art Museum (VISIT)",
+          "marina_mall": "Marina Mall of Abu Dhabi (Drive Through)",
+          "corniche": "Abu Dhabi Corniche (Photo Stop)",
+          "dates_market": "Dates Market (VISIT)",
+          "ferrari_world": "Ferrari World (Photo Stop)",
+          "dropoff": "Drop Off To Your Home / Hotel"
+        },
+        "additional_info": {
+          "baps_temple": "BAPS Temple Visit",
+          "ferrari_world_ticket": "Ferrari World Ticket",
+          "louvre_museum": "Louvre Museum"
+        },
+        "badge": "Featured",
+        "rating": 5,
+        "link": "tour-details"
+      }
+     
+    ],
+    "pagination": {
+      "currentPage": 1,
+      "totalPages": 3,
+      "toursPerPage": 3
+    }
+  }
+  

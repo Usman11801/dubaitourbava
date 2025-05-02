@@ -27,27 +27,29 @@ const page = () => {
     }
   }, []);
 
-
   const faqItem = [
     {
       id: 1,
       title: "1. Do I get picked from hotel when I book a Desert Safari Tour?",
-      answer: "Yes we shall pick you from your hotel / residence for Dubai Desert Safari. And there is no additional charges for Pick it's included in the Price ."
+      answer:
+        "Yes we shall pick you from your hotel / residence for Dubai Desert Safari. And there is no additional charges for Pick it's included in the Price .",
     },
     {
       id: 2,
       title: "2. How long is the Desert Safari?",
-      answer: "Dubai Desert Safari is 6 hours tour in Evening. 4 Hours tour is you go for Morning Desert Safari. And if you go for Over Night Desert Safari it will be around 16 Hours Tour."
+      answer:
+        "Dubai Desert Safari is 6 hours tour in Evening. 4 Hours tour is you go for Morning Desert Safari. And if you go for Over Night Desert Safari it will be around 16 Hours Tour.",
     },
     {
       id: 3,
       title: "3. How long is Quad Biking?",
-      answer: "Quad biking will be for 20 to 30 minutes."
+      answer: "Quad biking will be for 20 to 30 minutes.",
     },
     {
       id: 4,
       title: "4. Can Kids Drive Quad Bikes?",
-      answer: "Yes we have special quad bikes which are designed for the young kids."
+      answer:
+        "Yes we have special quad bikes which are designed for the young kids.",
     },
     // {
     //   id: 5,
@@ -56,8 +58,10 @@ const page = () => {
     // },
     {
       id: 6,
-      title: "6. What is the maximum number of people who can go to Desert Safari?",
-      answer: "There is no limit to that as we have many cars and can arrange many more if needed. Also no matter how many people are there in the safari only 6 people get in to a 4x4 ( including the driver ) so the size of the group does not effect the quality of the tour."
+      title:
+        "6. What is the maximum number of people who can go to Desert Safari?",
+      answer:
+        "There is no limit to that as we have many cars and can arrange many more if needed. Also no matter how many people are there in the safari only 6 people get in to a 4x4 ( including the driver ) so the size of the group does not effect the quality of the tour.",
     },
   ];
   const [active, setActive] = useState("collapse0");
@@ -104,13 +108,19 @@ const page = () => {
             <div className="col-lg-4 col-md-6">
               <div className="gallery-item">
                 <img
-                  src={tour?.image1 || "assets/images/destinations/destination-details1.jpg"}
+                  src={
+                    tour?.image1 ||
+                    "assets/images/destinations/destination-details1.jpg"
+                  }
                   alt="Destination"
                 />
               </div>
               <div className="gallery-item">
                 <img
-                  src={tour?.image2 || "assets/images/destinations/destination-details1.jpg"}
+                  src={
+                    tour?.image2 ||
+                    "assets/images/destinations/destination-details1.jpg"
+                  }
                   alt="Destination"
                 />
               </div>
@@ -118,7 +128,10 @@ const page = () => {
             <div className="col-lg-4 col-md-6">
               <div className="gallery-item">
                 <img
-                  src={tour?.image5 || "assets/images/destinations/destination-details1.jpg"}
+                  src={
+                    tour?.image5 ||
+                    "assets/images/destinations/destination-details1.jpg"
+                  }
                   alt="Destination"
                 />
               </div>
@@ -126,13 +139,19 @@ const page = () => {
             <div className="col-lg-4 col-md-6">
               <div className="gallery-item">
                 <img
-                  src={tour?.image3 || "assets/images/destinations/destination-details1.jpg"}
+                  src={
+                    tour?.image3 ||
+                    "assets/images/destinations/destination-details1.jpg"
+                  }
                   alt="Destination"
                 />
               </div>
               <div className="gallery-item">
                 <img
-                  src={tour?.image4 || "assets/images/destinations/destination-details1.jpg"}
+                  src={
+                    tour?.image4 ||
+                    "assets/images/destinations/destination-details1.jpg"
+                  }
                   alt="Destination"
                 />
               </div>
@@ -164,13 +183,10 @@ const page = () => {
                 data-aos-offset={50}
               >
                 <span className="location d-inline-block mb-10">
-                  <i className="fal fa-map-marker-alt" /> {tour?.location
-                  }
+                  <i className="fal fa-map-marker-alt" /> {tour?.location}
                 </span>
                 <div className="section-title pb-5">
-                  <h2>
-                    {tour?.title2}
-                  </h2>
+                  <h2>{tour?.title2}</h2>
                 </div>
                 <div className="ratting">
                   <i className="fas fa-star" />
@@ -204,87 +220,55 @@ const page = () => {
       </section>
       {/* Tour Header Area end */}
       {/* Tour Details Area start */}
-      <section className="tour-details-page pb-100">
+      <section className="tour-details-page pb-100"> 
         <div className="container">
           <div className="row">
             <div className="col-lg-8">
               <div className="tour-details-content">
                 <h3>Explore Tours</h3>
-                <p>
-                  {tour?.description2}
-                </p>
+                <p>{tour?.description2}</p>
                 <div className="row pb-55">
                   <div className="">
                     <div className="tour-include-exclude mt-30">
-                      <h5>Included or excluded</h5>
-                      <div className="row pb-55">
-  <div className="">
-    <div className="tour-include-exclude mt-30">
-      <h5>Included</h5>
-      {Object.entries(tour?.pick || {}).map(([key, description]) => (
-        <div key={key} className="pickup-section">
-          <div className="pickup-logo-text">
-            <div>
-              <h6 style={{ fontWeight: 'bold', color: '#303030' }}>
-                {key.replace(/_/g, ' ').toUpperCase()}
-              </h6>
-              <p>{description || `No ${key.replace(/_/g, ' ')} details available.`}</p>
-            </div>
-          </div>
-        </div>
-      ))}
-    </div>
-  </div>
-</div>
-<div className="row pb-55">
-  <div className="">
-    <div className="tour-include-exclude mt-30">
-      <h5>Excluded</h5>
-      {Object.entries(tour?.excluded || {}).map(([key, description]) => (
-        <div key={key} className="pickup-section">
-          <div className="pickup-logo-text">
-            <div>
-              <h6 style={{ fontWeight: 'bold', color: '#303030' }}>
-                {key.replace(/_/g, ' ').toUpperCase()}
-              </h6>
-              <p>{description || `No ${key.replace(/_/g, ' ')} details available.`}</p>
-            </div>
-          </div>
-        </div>
-      ))}
-    </div>
-  </div>
-</div>
-
-                      {/* <ul className="list-style-one check mt-25">
-                        <li>
-                          <i className="far fa-check" />
-                          
-                          {tour?.pick}
-                        </li>
-                        <li>
-                          <i className="far fa-check" /> 1 Meal Per Day
-                        </li>
-                        <li>
-                          <i className="far fa-check" /> Cruise Dinner &amp;
-                          Music Event
-                        </li>
-                        <li>
-                          <i className="far fa-check" /> Visit 7 Best Places in
-                          the City
-                        </li>
-                        <li>
-                          <i className="far fa-check" /> Bottled Water on Buses
-                        </li>
-                        <li>
-                          <i className="far fa-check" /> Transportation Luxury
-                          Tour Bus
-                        </li>
-                      </ul> */}
+                      <h5>Package Inclusions</h5>
+                      <ul className="list-style-one check mt-25">
+                        {tour?.inclusions && Object.entries(tour.inclusions).map(([key, value], index) => (
+                          <li key={index}>
+                            <i className="far fa-check" />
+                            {value}
+                          </li>
+                        ))}
+                      </ul>
                     </div>
                   </div>
-
                 </div>
+
+                <div className="row pb-55">
+                  <div className="">
+                    <div className="tour-include-exclude mt-30">
+                      <h5>Additional Information</h5>
+                      <ul className="list-style-one check mt-25">
+                        {tour?.additional_info && Object.entries(tour.additional_info).map(([key, value], index) => {
+                          if (Array.isArray(value)) {
+                            return value.map((item, i) => (
+                              <li key={`${index}-${i}`}>
+                                <i className="far fa-check" />
+                                {item}
+                              </li>
+                            ));
+                          }
+                          return (
+                            <li key={index}>
+                              <i className="far fa-check" />
+                              {value}
+                            </li>
+                          );
+                        })}
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              
               </div>
               {/* <h3>Activities</h3>
               <div className="tour-activities mt-30 mb-45">
@@ -359,8 +343,8 @@ const page = () => {
               <h3>Maps</h3>
               <div className="tour-map mt-30 mb-50">
                 <iframe
-                   src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d28917.758162586367!2d55.270783!3d25.204849!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sbd!4v1706508986625!5m2!1sen!2sbd" 
-                   style={{ border: 0, width: "100%" }}
+                  src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d28917.758162586367!2d55.270783!3d25.204849!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sbd!4v1706508986625!5m2!1sen!2sbd"
+                  style={{ border: 0, width: "100%" }}
                   allowFullScreen=""
                   loading="lazy"
                   referrerPolicy="no-referrer-when-downgrade"
@@ -817,11 +801,10 @@ const page = () => {
                 >
                   <h5 className="widget-title">Need Help?</h5>
                   <ul className="list-style-one">
-                  <li>
+                    <li>
                       <i className="far fa-envelope" />{" "}
                       <a href="emilto:urbanadventuretourism@gmail.com">
-                      urbanadventuretourism@gmail.com
-
+                        urbanadventuretourism@gmail.com
                       </a>
                     </li>
                     <li>
