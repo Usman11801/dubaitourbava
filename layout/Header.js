@@ -84,6 +84,24 @@ const Menu = () => {
                 <li>
                   <Link href="private-tour-list">Private Tour</Link>
                 </li>
+                <li>
+                  <Link href="executive-tour-list">Executive</Link>
+                </li>
+                <li>
+                  <Link href="combo-deal-list">Combo Deals</Link>
+                </li>
+                <li>
+                  <Link href="water-park-list">Water Parks</Link>
+                </li>
+                <li>
+                  <Link href="sky-tour-list">Sky Tours</Link>
+                </li>
+                <li>
+                  <Link href="sea-advantucher-list">Sea Advantucher</Link>
+                </li>
+                <li>
+                  <Link href="dhow-cruise-list">Dhow Cruise</Link>
+                </li>
                  <li>
               
             </li>

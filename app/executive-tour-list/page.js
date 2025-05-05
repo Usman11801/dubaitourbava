@@ -6,7 +6,7 @@ import Subscribe from "@/components/Subscribe";
 import TourSidebar from "@/components/TourSidebar";
 import ReveloLayout from "@/layout/ReveloLayout";
 import Link from "next/link";
-import toursData from "../private-tour-list/toursData.json";
+import toursData from "../executive-tour-list/toursData.json";
 
 const ITEMS_PER_PAGE = 6;
 
@@ -25,7 +25,7 @@ const Page = () => {
 
   return (
     <ReveloLayout>
-      <Banner pageTitle={"Private Tour"} pageName={"Private Tour"} search />
+      <Banner pageTitle={"Executive Tour"} pageName={"Executive Tour"} search />
       <section className="tour-list-page py-100 rel z-1">
         <div className="container">
           <div className="row">
@@ -59,7 +59,7 @@ const Page = () => {
                     </div>
                     <h5>
                       <Link href={{
-                        pathname: '/private-tour-details',
+                        pathname: '/executive-tour-details',
                         query: { id: tour?.id },
                       }}>
                         {tour.title}</Link>

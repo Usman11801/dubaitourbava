@@ -5,7 +5,7 @@ import ReveloLayout from "@/layout/ReveloLayout";
 import Link from "next/link";
 import { useState, useEffect } from "react";
 import { Accordion } from "react-bootstrap";
-import toursData from "../private-tour-list/toursData.json";
+import toursData from "../combo-deal-list/toursData.json";
 
 const page = () => {
   const [id, setId] = useState(null);
