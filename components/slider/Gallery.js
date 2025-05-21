@@ -4,7 +4,12 @@ import { sliderProps } from "@/utility/sliderprops";
 import Link from "next/link";
 import Slider from "react-slick";
 
-const Gallery = ({ images }) => {
+const Gallery = ({ images = [] }) => {
+  // If no images provided, return null or a placeholder
+  if (!images || images.length === 0) {
+    return null;
+  }
+
   return (
     <Slider {...sliderProps.gallery} className="gallery-slider-active">
       {images.map((image, index) => (
@@ -43,4 +48,5 @@ const Gallery = ({ images }) => {
     </Slider>
   );
 };
+
 export default Gallery;
