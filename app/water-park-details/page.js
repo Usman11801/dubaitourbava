@@ -126,14 +126,14 @@ const page = () => {
       {/* Tour Gallery start */}
       <div className="tour-gallery">
         <div className="container-fluid">
-          {tour && (
+          {tour && tour.image1 && (
             <Gallery images={[
               tour.image1,
               tour.image2,
               tour.image3,
               tour.image4,
               tour.image5,
-            ].filter(image => image)} />
+            ].filter(Boolean)} />
           )}
         </div>
       </div>
@@ -210,7 +210,7 @@ const page = () => {
                       <h5>Package Inclusions</h5>
                       <ul className="list-style-one check mt-25">
                         {tour?.inclusions &&
-                          Object.entries(tour.inclusions).map(
+                          Object.entries(tour.inclusions || {}).map(
                             ([key, value], index) => (
                               <li key={index}>
                                 <i className="far fa-check" />
@@ -224,13 +224,13 @@ const page = () => {
                 </div>
 
                 {tour?.additional_info &&
-                  Object.keys(tour.additional_info).length > 0 && (
+                  Object.keys(tour.additional_info || {}).length > 0 && (
                     <div className="row pb-55">
                       <div className="">
                         <div className="tour-include-exclude mt-30">
                           <h5>Additional Information</h5>
                           <ul className="list-style-one check mt-25">
-                            {Object.entries(tour.additional_info).map(
+                            {Object.entries(tour.additional_info || {}).map(
                               ([key, value], index) => {
                                 if (Array.isArray(value)) {
                                   return value.map((item, i) => (
@@ -254,11 +254,11 @@ const page = () => {
                     </div>
                   )}
                 <div className="row pb-55">
-                  {tour?.excluded && Object.keys(tour.excluded).length > 0 && (
+                  {tour?.excluded && Object.keys(tour.excluded || {}).length > 0 && (
                     <div className="">
                       <div className="tour-include-exclude mt-30">
                         <h5>Excluded</h5>
-                        {Object.entries(tour.excluded).map(
+                        {Object.entries(tour.excluded || {}).map(
                           ([key, description]) => (
                             <div key={key} className="pickup-section">
                               <div className="pickup-logo-text">
@@ -289,13 +289,13 @@ const page = () => {
                 </div>
                 {/* IMPORTANT NOTES */}
                 {tour?.important_notes &&
-                  Object.keys(tour.important_notes).length > 0 && (
+                  Object.keys(tour.important_notes || {}).length > 0 && (
                     <div className="row pb-55">
                       <div className="">
                         <div className="tour-include-exclude mt-30">
                           <h5>Important Notes</h5>
                           <ul className="list-style-one check mt-25">
-                            {Object.entries(tour.important_notes).map(
+                            {Object.entries(tour.important_notes || {}).map(
                               ([key, value], index) => (
                                 <li key={index}>
                                   <i className="far fa-check" />
@@ -311,13 +311,13 @@ const page = () => {
 
                 {/* CANCELLATION POLICY */}
                 {tour?.cancellation_policy &&
-                  Object.keys(tour.cancellation_policy).length > 0 && (
+                  Object.keys(tour.cancellation_policy || {}).length > 0 && (
                     <div className="row pb-55">
                       <div className="">
                         <div className="tour-include-exclude mt-30">
                           <h5>Cancellation Policy</h5>
                           <ul className="list-style-one check mt-25">
-                            {Object.entries(tour.cancellation_policy).map(
+                            {Object.entries(tour.cancellation_policy || {}).map(
                               ([key, value], index) => (
                                 <li key={index}>
                                   <i className="far fa-check" />
