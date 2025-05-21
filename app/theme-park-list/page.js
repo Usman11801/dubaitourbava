@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import Banner from "@/components/Banner";
 import Subscribe from "@/components/Subscribe";
 import TourSidebar from "@/components/TourSidebar";
@@ -12,6 +12,18 @@ const ITEMS_PER_PAGE = 6;
 
 const Page = () => {
   const [currentPage, setCurrentPage] = useState(1);
+  const [isMobile, setIsMobile] = useState(false);
+
+  useEffect(() => {
+    const checkMobile = () => {
+      setIsMobile(window.innerWidth <= 768);
+    };
+    
+    checkMobile();
+    window.addEventListener('resize', checkMobile);
+    
+    return () => window.removeEventListener('resize', checkMobile);
+  }, []);
 
   const totalPages = Math.ceil(toursData.tours.length / ITEMS_PER_PAGE);
   const startIndex = (currentPage - 1) * ITEMS_PER_PAGE;
@@ -29,8 +41,12 @@ const Page = () => {
       <section className="tour-list-page py-100 rel z-1">
         <div className="container">
           <div className="row">
-            <TourSidebar />
-            <div className="col-lg-9">
+            {!isMobile && (
+              <div className="col-lg-3">
+                <TourSidebar />
+              </div>
+            )}
+            <div className={`${isMobile ? 'col-12' : 'col-lg-9'}`}>
               {currentTours.map((tour) => (
                 <div
                   key={tour.id}
@@ -82,7 +98,6 @@ const Page = () => {
                           pathname: '/theme-park-details',
                           query: { id: tour.id },
                         }}
-                        // href={tour.link}
                         className="theme-btn style-two style-three"
                       >
                         <span data-hover="Book Now">Book Now</span>
@@ -126,10 +141,52 @@ const Page = () => {
                 </li>
               </ul>
             </div>
+            {isMobile && (
+              <div className="col-12 mt-4">
+                <TourSidebar />
+              </div>
+            )}
           </div>
         </div>
       </section>
-      <Subscribe />
+      <style jsx>{`
+        @media (max-width: 768px) {
+          .destination-item {
+            margin-bottom: 20px;
+          }
+          .destination-item .image {
+            height: 200px;
+            overflow: hidden;
+          }
+          .destination-item .image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+          }
+          .destination-item .content {
+            padding: 15px;
+          }
+          .destination-item .content h5 {
+            font-size: 18px;
+            margin-bottom: 10px;
+          }
+          .destination-item .content p {
+            font-size: 14px;
+            margin-bottom: 10px;
+          }
+          .destination-footer {
+            flex-direction: column;
+            align-items: flex-start;
+          }
+          .destination-footer .price {
+            margin-bottom: 10px;
+          }
+          .destination-footer .theme-btn {
+            width: 100%;
+            text-align: center;
+          }
+        }
+      `}</style>
     </ReveloLayout>
   );
 };

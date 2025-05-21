@@ -6,6 +6,7 @@ import Link from "next/link";
 import { useState, useEffect } from "react";
 import { Accordion } from "react-bootstrap";
 import toursData from "../combo-deal-list/toursData.json";
+import Gallery from "@/components/slider/Gallery";
 
 const page = () => {
   const [id, setId] = useState(null);
@@ -117,70 +118,15 @@ const page = () => {
       {/* Tour Gallery start */}
       <div className="tour-gallery">
         <div className="container-fluid">
-          <div className="row gap-10 justify-content-center rel">
-            <div className="col-lg-4 col-md-6">
-              <div className="gallery-item">
-                <img
-                  src={
-                    tour?.image1 ||
-                    "assets/images/destinations/destination-details1.jpg"
-                  }
-                  alt="Destination"
-                />
-              </div>
-              <div className="gallery-item">
-                <img
-                  src={
-                    tour?.image2 ||
-                    "assets/images/destinations/destination-details1.jpg"
-                  }
-                  alt="Destination"
-                />
-              </div>
-            </div>
-            <div className="col-lg-4 col-md-6">
-              <div className="gallery-item">
-                <img
-                  src={
-                    tour?.image5 ||
-                    "assets/images/destinations/destination-details1.jpg"
-                  }
-                  alt="Destination"
-                />
-              </div>
-            </div>
-            <div className="col-lg-4 col-md-6">
-              <div className="gallery-item">
-                <img
-                  src={
-                    tour?.image3 ||
-                    "assets/images/destinations/destination-details1.jpg"
-                  }
-                  alt="Destination"
-                />
-              </div>
-              <div className="gallery-item">
-                <img
-                  src={
-                    tour?.image4 ||
-                    "assets/images/destinations/destination-details1.jpg"
-                  }
-                  alt="Destination"
-                />
-              </div>
-            </div>
-            {/* <div className="col-lg-12">
-              <div className="gallery-more-btn">
-                <Link
-                  href="contact"
-                  className="theme-btn style-two bgc-secondary"
-                >
-                  <span data-hover="See All Photos">See All Photos</span>
-                  <i className="fal fa-arrow-right" />
-                </Link>
-              </div>
-            </div> */}
-          </div>
+          {tour && (
+            <Gallery images={[
+              tour.image1,
+              tour.image2,
+              tour.image3,
+              tour.image4,
+              tour.image5,
+            ].filter(image => image)} />
+          )}
         </div>
       </div>
       {/* Tour Gallery End */}

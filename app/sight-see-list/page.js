@@ -29,7 +29,7 @@ const Page = () => {
       <section className="tour-list-page py-100 rel z-1">
         <div className="container">
           <div className="row">
-            <TourSidebar />
+            {/* <TourSidebar /> */}
             <div className="col-lg-9">
               {currentTours.map((tour) => (
                 <div
@@ -126,6 +126,8 @@ const Page = () => {
                 </li>
               </ul>
             </div>
+                        <TourSidebar />
+
           </div>
         </div>
       </section>

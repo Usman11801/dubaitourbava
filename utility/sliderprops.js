@@ -105,36 +105,36 @@ export const sliderProps = {
     ],
   },
   gallery: {
-    slidesToShow: 4,
-    slidesToScroll: 1,
-    infinite: true,
-    speed: 400,
-    arrows: false,
     dots: true,
-    centerMode: true,
-    focusOnSelect: true,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 1,
+    slidesToScroll: 1,
     autoplay: true,
-    autoplaySpeed: 5000,
+    autoplaySpeed: 3000,
+    arrows: true,
+    fade: true,
+    cssEase: 'linear',
     responsive: [
       {
-        breakpoint: 1600,
-        settings: {
-          slidesToShow: 3,
-        },
-      },
-      {
-        breakpoint: 1200,
-        settings: {
-          slidesToShow: 2,
-        },
-      },
-      {
-        breakpoint: 650,
+        breakpoint: 1024,
         settings: {
           slidesToShow: 1,
-        },
+          slidesToScroll: 1,
+          infinite: true,
+          dots: true
+        }
       },
-    ],
+      {
+        breakpoint: 600,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          dots: true,
+          arrows: false
+        }
+      }
+    ]
   },
   product: {
     slidesToShow: 4,

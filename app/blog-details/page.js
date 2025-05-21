@@ -1,6 +1,8 @@
 import Banner from "@/components/Banner";
 import ReveloLayout from "@/layout/ReveloLayout";
 import Link from "next/link";
+import Gallery from "@/components/slider/Gallery";
+
 const page = () => {
   return (
     <ReveloLayout insta>
@@ -44,15 +46,16 @@ const page = () => {
                   overview related to a tour and travel agency.
                 </p>
                 <div
-                  className="image mt-40 mb-30"
+                  className="blog-gallery mt-40 mb-30"
                   data-aos="fade-up"
                   data-aos-duration={1500}
                   data-aos-offset={50}
                 >
-                  <img
-                    src="assets/images/blog/blog-details.jpg"
-                    alt="Blog Details"
-                  />
+                  <Gallery images={[
+                    "assets/images/blog/blog-details.jpg",
+                    "assets/images/blog/blog-middle1.jpg",
+                    "assets/images/blog/blog-middle2.jpg",
+                  ]} />
                 </div>
                 <h5>Services Offered by a Tour and Travel Agency</h5>
                 <p>
@@ -94,44 +97,6 @@ const page = () => {
                     international travel.
                   </li>
                 </ul>
-                <div className="row mb-10">
-                  <div className="col-sm-6">
-                    <div
-                      className="image mb-30"
-                      data-aos="fade-up"
-                      data-aos-duration={1500}
-                      data-aos-offset={50}
-                    >
-                      <img
-                        src="assets/images/blog/blog-middle1.jpg"
-                        alt="Blog"
-                      />
-                    </div>
-                  </div>
-                  <div className="col-sm-6">
-                    <div
-                      className="image mb-30"
-                      data-aos="fade-up"
-                      data-aos-duration={1500}
-                      data-aos-offset={50}
-                      data-aos-delay={50}
-                    >
-                      <img
-                        src="assets/images/blog/blog-middle2.jpg"
-                        alt="Blog"
-                      />
-                    </div>
-                  </div>
-                </div>
-                <h5>How to Start a Tour and Travel Agency</h5>
-                <p>
-                  Agency plays a pivotal role in crafting memorable experiences
-                  for travelers by offering wide range services tailored to
-                  individual preferences. Whether it's a family vacation, an
-                  adventure trip, or luxury getaway well-established travel
-                  agency can handle everything from flight bookings and
-                  accommodation to guided tours .
-                </p>
                 <blockquote
                   className="mt-30 mb-35"
                   data-aos="fade-up"

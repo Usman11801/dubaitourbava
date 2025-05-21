@@ -3,6 +3,8 @@ import Destination from "@/components/slider/Destination";
 import Subscribe from "@/components/Subscribe";
 import ReveloLayout from "@/layout/ReveloLayout";
 import Link from "next/link";
+import Gallery from "@/components/slider/Gallery";
+
 const page = () => {
   return (
     <ReveloLayout>
@@ -44,55 +46,13 @@ const page = () => {
       {/* Destination Gallery start */}
       <div className="destination-gallery">
         <div className="container-fluid">
-          <div className="row gap-10 justify-content-center rel">
-            <div className="col-lg-4 col-md-6">
-              <div className="gallery-item">
-                <img
-                  src="assets/images/destinations/destination-details1.jpg"
-                  alt="Destination"
-                />
-              </div>
-              <div className="gallery-item">
-                <img
-                  src="assets/images/destinations/destination-details4.jpg"
-                  alt="Destination"
-                />
-              </div>
-            </div>
-            <div className="col-lg-4 col-md-6">
-              <div className="gallery-item">
-                <img
-                  src="assets/images/destinations/destination-details2.jpg"
-                  alt="Destination"
-                />
-              </div>
-            </div>
-            <div className="col-lg-4 col-md-6">
-              <div className="gallery-item">
-                <img
-                  src="assets/images/destinations/destination-details3.jpg"
-                  alt="Destination"
-                />
-              </div>
-              <div className="gallery-item">
-                <img
-                  src="assets/images/destinations/destination-details5.jpg"
-                  alt="Destination"
-                />
-              </div>
-            </div>
-            <div className="col-lg-12">
-              <div className="gallery-more-btn">
-                <Link
-                  href="contact"
-                  className="theme-btn style-two bgc-secondary"
-                >
-                  <span data-hover="See All Photos">See All Photos</span>
-                  <i className="fal fa-arrow-right" />
-                </Link>
-              </div>
-            </div>
-          </div>
+          <Gallery images={[
+            "assets/images/destinations/destination-details1.jpg",
+            "assets/images/destinations/destination-details4.jpg",
+            "assets/images/destinations/destination-details2.jpg",
+            "assets/images/destinations/destination-details3.jpg",
+            "assets/images/destinations/destination-details5.jpg",
+          ]} />
         </div>
       </div>
       {/* Destination Gallery End */}

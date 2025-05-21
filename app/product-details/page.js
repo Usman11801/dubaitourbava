@@ -3,6 +3,8 @@ import Banner from "@/components/Banner";
 import Product from "@/components/slider/Product";
 import ReveloLayout from "@/layout/ReveloLayout";
 import { Nav, Tab } from "react-bootstrap";
+import Gallery from "@/components/slider/Gallery";
+
 const page = () => {
   return (
     <ReveloLayout insta>
@@ -18,61 +20,11 @@ const page = () => {
                 data-aos-duration={1500}
                 data-aos-offset={50}
               >
-                <Tab.Container defaultActiveKey={"preview1"}>
-                  <Tab.Content className="tab-content preview-images">
-                    <Tab.Pane
-                      className="tab-pane fade preview-item "
-                      eventKey="preview1"
-                    >
-                      <img
-                        src="assets/images/shop/preview1.png"
-                        alt="Perview"
-                      />
-                    </Tab.Pane>
-                    <Tab.Pane
-                      className="tab-pane fade preview-item"
-                      eventKey="preview2"
-                    >
-                      <img
-                        src="assets/images/shop/preview1.png"
-                        alt="Perview"
-                      />
-                    </Tab.Pane>
-                    <Tab.Pane
-                      className="tab-pane fade preview-item"
-                      eventKey="preview3"
-                    >
-                      <img
-                        src="assets/images/shop/preview1.png"
-                        alt="Perview"
-                      />
-                    </Tab.Pane>
-                  </Tab.Content>
-                  <Nav as={"ul"} className="nav thumb-images rmb-20">
-                    <Nav.Link
-                      as={"a"}
-                      eventKey="preview1"
-                      href="#preview1"
-                      className="thumb-item"
-                    >
-                      <img src="assets/images/shop/thumb1.png" alt="Thumb" />
-                    </Nav.Link>
-                    <Nav.Link
-                      as={"a"}
-                      eventKey="preview2"
-                      className="thumb-item"
-                    >
-                      <img src="assets/images/shop/thumb2.png" alt="Thumb" />
-                    </Nav.Link>
-                    <Nav.Link
-                      as={"a"}
-                      eventKey="preview3"
-                      className="thumb-item"
-                    >
-                      <img src="assets/images/shop/thumb3.png" alt="Thumb" />
-                    </Nav.Link>
-                  </Nav>
-                </Tab.Container>
+                <Gallery images={[
+                  "assets/images/shop/preview1.png",
+                  "assets/images/shop/thumb2.png",
+                  "assets/images/shop/thumb3.png",
+                ]} />
               </div>
             </div>
             <div className="col-lg-6">

@@ -11,7 +11,7 @@ const page = () => {
       <section className="tour-grid-page py-100 rel z-1">
         <div className="container">
           <div className="row">
-            <TourSidebar />
+            {/* <TourSidebar /> */}
             <div className="col-lg-9">
               <div className="shop-shorter rel z-3 mb-20">
                 <ul className="grid-list mb-15 me-2">
@@ -775,6 +775,8 @@ const page = () => {
                 </div>
               </div>
             </div>
+                        <TourSidebar />
+
           </div>
         </div>
       </section>

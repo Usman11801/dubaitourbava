@@ -6,11 +6,19 @@ import Link from "next/link";
 import { useState, useEffect } from "react";
 import { Accordion } from "react-bootstrap";
 import toursData from "../sky-tour-list//toursData.json";
+import Gallery from "@/components/slider/Gallery";
 
 
 const page = () => {
   const [id, setId] = useState(null);
   const [tour, setTour] = useState(null);
+
+  const scrollToBooking = () => {
+    const bookingSection = document.querySelector('.widget-booking');
+    if (bookingSection) {
+      bookingSection.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
 
   useEffect(() => {
     if (typeof window !== "undefined") {
@@ -118,70 +126,15 @@ const page = () => {
       {/* Tour Gallery start */}
       <div className="tour-gallery">
         <div className="container-fluid">
-          <div className="row gap-10 justify-content-center rel">
-            <div className="col-lg-4 col-md-6">
-              <div className="gallery-item">
-                <img
-                  src={
-                    tour?.image1 ||
-                    "assets/images/destinations/destination-details1.jpg"
-                  }
-                  alt="Destination"
-                />
-              </div>
-              <div className="gallery-item">
-                <img
-                  src={
-                    tour?.image2 ||
-                    "assets/images/destinations/destination-details1.jpg"
-                  }
-                  alt="Destination"
-                />
-              </div>
-            </div>
-            <div className="col-lg-4 col-md-6">
-              <div className="gallery-item">
-                <img
-                  src={
-                    tour?.image5 ||
-                    "assets/images/destinations/destination-details1.jpg"
-                  }
-                  alt="Destination"
-                />
-              </div>
-            </div>
-            <div className="col-lg-4 col-md-6">
-              <div className="gallery-item">
-                <img
-                  src={
-                    tour?.image3 ||
-                    "assets/images/destinations/destination-details1.jpg"
-                  }
-                  alt="Destination"
-                />
-              </div>
-              <div className="gallery-item">
-                <img
-                  src={
-                    tour?.image4 ||
-                    "assets/images/destinations/destination-details1.jpg"
-                  }
-                  alt="Destination"
-                />
-              </div>
-            </div>
-            {/* <div className="col-lg-12">
-              <div className="gallery-more-btn">
-                <Link
-                  href="contact"
-                  className="theme-btn style-two bgc-secondary"
-                >
-                  <span data-hover="See All Photos">See All Photos</span>
-                  <i className="fal fa-arrow-right" />
-                </Link>
-              </div>
-            </div> */}
-          </div>
+          {tour && (
+            <Gallery images={[
+              tour.image1,
+              tour.image2,
+              tour.image3,
+              tour.image4,
+              tour.image5,
+            ].filter(image => image)} />
+          )}
         </div>
       </div>
       {/* Tour Gallery End */}
@@ -196,9 +149,19 @@ const page = () => {
                 data-aos-duration={1500}
                 data-aos-offset={50}
               >
-                <span className="location d-inline-block mb-10">
-                  <i className="fal fa-map-marker-alt" /> {tour?.location}
-                </span>
+                <div className="d-flex justify-content-between align-items-center mb-10">
+                  <span className="location d-inline-block">
+                    <i className="fal fa-map-marker-alt" /> {tour?.location}
+                  </span>
+                  <button 
+                    onClick={scrollToBooking}
+                    className="theme-btn style-two bgc-secondary"
+                    style={{ whiteSpace: 'nowrap' }}
+                  >
+                    <span data-hover="Book Now">Book Now</span>
+                    <i className="fal fa-arrow-right" />
+                  </button>
+                </div>
                 <div className="section-title pb-5">
                   <h2>{tour?.title2}</h2>
                 </div>

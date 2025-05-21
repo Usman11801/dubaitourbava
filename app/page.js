@@ -7,6 +7,7 @@ import Link from "next/link";
 import destinations from './Jsons/destinations.json';
 import destinations2 from './Jsons/destinations2.json';
 import FloatingWhatsApp from "../components/FloatingWhatsApp";
+import Gallery from "@/components/slider/Gallery";
 const page = () => {
   return (
    <div>
@@ -25,10 +26,12 @@ const page = () => {
           >
             tour &amp; Travel
           </h1>
-          <div
-            className="main-hero-image bgs-cover"
-            style={{ backgroundImage: "url(assets/images/hero/hero2.jpg)" }}
-          />
+          <Gallery images={[
+            "assets/images/hero/hero.jpg",
+            "assets/images/hero/hero2.jpg",
+            "assets/images/hero/hero-three-bg.jpg",
+            "assets/images/hero/hero-two.jpg",
+          ]} />
         </div>
         {/* <SearchFilter /> */}
       </section>
@@ -48,7 +51,7 @@ const page = () => {
                   title={"Discover the Dubai with Urban Adventure tourism"}
                   countValue={34500}
                   subtitle1={"One site"}
-                  subtitle2={"most popular experience you’ll remember"}
+                  subtitle2={"most popular experience you'll remember"}
                 />
               </div>
             </div>
@@ -414,7 +417,7 @@ const page = () => {
               >
                 <SectionTitle
                   title={"Discover the World's Class Top Hotel"}
-                  subtitle2="most popular experience you’ll remember"
+                  subtitle2="most popular experience you'll remember"
                 />
               </div>
             </div>
@@ -836,7 +839,7 @@ const page = () => {
               >
                 <SectionTitle
                   title={"Read Latest News & Blog"}
-                  subtitle2="most popular experience you’ll remember"
+                  subtitle2="most popular experience you'll remember"
                 />
               </div>
             </div>
