@@ -30,11 +30,21 @@ const page = () => {
         setId(numericId);
 
         const foundTour = toursData.tours.find((tour) => tour.id === numericId);
-        setTour(foundTour);
+        setTour(foundTour || null);
         console.log("Tour:", foundTour);
       }
     }
   }, []);
+
+  if (!tour) {
+    return (
+      <ReveloLayout>
+        <div className="container text-center py-5">
+          <h2>Loading...</h2>
+        </div>
+      </ReveloLayout>
+    );
+  }
 
   const faqItem = [
     {
@@ -102,7 +112,7 @@ const page = () => {
                 data-aos-duration={1500}
                 data-aos-offset={50}
               >
-                {tour?.title}
+                {tour?.title || 'Tour Details'}
               </h2>
               <nav aria-label="breadcrumb">
                 <ol
@@ -151,7 +161,7 @@ const page = () => {
               >
                 <div className="d-flex justify-content-between align-items-center mb-10">
                   <span className="location d-inline-block">
-                    <i className="fal fa-map-marker-alt" /> {tour?.location}
+                    <i className="fal fa-map-marker-alt" /> {tour?.location || 'Location not specified'}
                   </span>
                   <button 
                     onClick={scrollToBooking}
@@ -163,7 +173,7 @@ const page = () => {
                   </button>
                 </div>
                 <div className="section-title pb-5">
-                  <h2>{tour?.title2}</h2>
+                  <h2>{tour?.title2 || tour?.title || 'Tour Details'}</h2>
                 </div>
                 <div className="ratting">
                   <i className="fas fa-star" />
@@ -203,62 +213,64 @@ const page = () => {
             <div className="col-lg-8">
               <div className="tour-details-content">
                 <h3>Explore Tours</h3>
-                <p>{tour?.description2}</p>
+                <p>{tour?.description2 || tour?.description || 'No description available'}</p>
                 <div className="row pb-55">
                   <div className="">
                     <div className="tour-include-exclude mt-30">
                       <h5>Package Inclusions</h5>
                       <ul className="list-style-one check mt-25">
-                        {tour?.inclusions &&
-                          Object.entries(tour.inclusions || {}).map(
+                        {tour?.inclusions ? 
+                          Object.entries(tour.inclusions).map(
                             ([key, value], index) => (
                               <li key={index}>
                                 <i className="far fa-check" />
                                 {value}
                               </li>
                             )
+                          ) : (
+                            <li>No inclusions specified</li>
                           )}
                       </ul>
                     </div>
                   </div>
                 </div>
 
-                {tour?.additional_info &&
-                  Object.keys(tour.additional_info || {}).length > 0 && (
-                    <div className="row pb-55">
-                      <div className="">
-                        <div className="tour-include-exclude mt-30">
-                          <h5>Additional Information</h5>
-                          <ul className="list-style-one check mt-25">
-                            {Object.entries(tour.additional_info || {}).map(
-                              ([key, value], index) => {
-                                if (Array.isArray(value)) {
-                                  return value.map((item, i) => (
-                                    <li key={`${index}-${i}`}>
-                                      <i className="far fa-check" />
-                                      {item}
-                                    </li>
-                                  ));
-                                }
-                                return (
-                                  <li key={index}>
+                {tour?.additional_info && Object.keys(tour.additional_info).length > 0 && (
+                  <div className="row pb-55">
+                    <div className="">
+                      <div className="tour-include-exclude mt-30">
+                        <h5>Additional Information</h5>
+                        <ul className="list-style-one check mt-25">
+                          {Object.entries(tour.additional_info).map(
+                            ([key, value], index) => {
+                              if (Array.isArray(value)) {
+                                return value.map((item, i) => (
+                                  <li key={`${index}-${i}`}>
                                     <i className="far fa-check" />
-                                    {value}
+                                    {item}
                                   </li>
-                                );
+                                ));
                               }
-                            )}
-                          </ul>
-                        </div>
+                              return (
+                                <li key={index}>
+                                  <i className="far fa-check" />
+                                  {value}
+                                </li>
+                              );
+                            }
+                          )}
+                        </ul>
                       </div>
                     </div>
-                  )}
-                <div className="row pb-55">
-                  {tour?.excluded && Object.keys(tour.excluded || {}).length > 0 && (
+                  </div>
+                )}
+
+                {tour?.excluded && Object.keys(tour.excluded).length > 0 && (
+                  <div className="row pb-55">
                     <div className="">
                       <div className="tour-include-exclude mt-30">
                         <h5>Excluded</h5>
-                        {Object.entries(tour.excluded || {}).map(
+                        {Object.entries(tour.excluded).map(
                           ([key, description]) => (
                             <div key={key} className="pickup-section">
                               <div className="pickup-logo-text">
@@ -285,51 +297,48 @@ const page = () => {
                         )}
                       </div>
                     </div>
-                  )}
-                </div>
-                {/* IMPORTANT NOTES */}
-                {tour?.important_notes &&
-                  Object.keys(tour.important_notes || {}).length > 0 && (
-                    <div className="row pb-55">
-                      <div className="">
-                        <div className="tour-include-exclude mt-30">
-                          <h5>Important Notes</h5>
-                          <ul className="list-style-one check mt-25">
-                            {Object.entries(tour.important_notes || {}).map(
-                              ([key, value], index) => (
-                                <li key={index}>
-                                  <i className="far fa-check" />
-                                  {value}
-                                </li>
-                              )
-                            )}
-                          </ul>
-                        </div>
-                      </div>
-                    </div>
-                  )}
+                  </div>
+                )}
 
-                {/* CANCELLATION POLICY */}
-                {tour?.cancellation_policy &&
-                  Object.keys(tour.cancellation_policy || {}).length > 0 && (
-                    <div className="row pb-55">
-                      <div className="">
-                        <div className="tour-include-exclude mt-30">
-                          <h5>Cancellation Policy</h5>
-                          <ul className="list-style-one check mt-25">
-                            {Object.entries(tour.cancellation_policy || {}).map(
-                              ([key, value], index) => (
-                                <li key={index}>
-                                  <i className="far fa-check" />
-                                  {value}
-                                </li>
-                              )
-                            )}
-                          </ul>
-                        </div>
+                {tour?.important_notes && Object.keys(tour.important_notes).length > 0 && (
+                  <div className="row pb-55">
+                    <div className="">
+                      <div className="tour-include-exclude mt-30">
+                        <h5>Important Notes</h5>
+                        <ul className="list-style-one check mt-25">
+                          {Object.entries(tour.important_notes).map(
+                            ([key, value], index) => (
+                              <li key={index}>
+                                <i className="far fa-check" />
+                                {value}
+                              </li>
+                            )
+                          )}
+                        </ul>
                       </div>
                     </div>
-                  )}
+                  </div>
+                )}
+
+                {tour?.cancellation_policy && Object.keys(tour.cancellation_policy).length > 0 && (
+                  <div className="row pb-55">
+                    <div className="">
+                      <div className="tour-include-exclude mt-30">
+                        <h5>Cancellation Policy</h5>
+                        <ul className="list-style-one check mt-25">
+                          {Object.entries(tour.cancellation_policy).map(
+                            ([key, value], index) => (
+                              <li key={index}>
+                                <i className="far fa-check" />
+                                {value}
+                              </li>
+                            )
+                          )}
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                )}
               </div>
               {/* <h3>Activities</h3>
               <div className="tour-activities mt-30 mb-45">
