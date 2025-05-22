@@ -6,10 +6,37 @@ import Link from "next/link";
 import { useState, useEffect } from "react";
 import { Accordion } from "react-bootstrap";
 import toursData from "../sight-see-list/toursData.json";
+import Gallery from "@/components/slider/Gallery";
 
 const page = () => {
   const [id, setId] = useState(null);
   const [tour, setTour] = useState(null);
+  const [adultCount, setAdultCount] = useState(1);
+  const [childCount, setChildCount] = useState(0);
+  const [extraService, setExtraService] = useState('per_booking');
+  const [selectedTime, setSelectedTime] = useState('12:00');
+
+  const adultPrice = 28.50;
+  const childPrice = 50.40;
+  const extraServicePerBooking = 50;
+  const extraServicePerPerson = 24;
+
+  const calculateTotal = () => {
+    let total = (adultCount * adultPrice) + (childCount * childPrice);
+    if (extraService === 'per_booking') {
+      total += extraServicePerBooking;
+    } else if (extraService === 'per_person') {
+      total += extraServicePerPerson * (adultCount + childCount);
+    }
+    return total.toFixed(2);
+  };
+
+  const scrollToBooking = () => {
+    const bookingSection = document.querySelector('.widget-booking');
+    if (bookingSection) {
+      bookingSection.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
 
   useEffect(() => {
     if (typeof window !== "undefined") {
@@ -117,70 +144,15 @@ const page = () => {
       {/* Tour Gallery start */}
       <div className="tour-gallery">
         <div className="container-fluid">
-          <div className="row gap-10 justify-content-center rel">
-            <div className="col-lg-4 col-md-6">
-              <div className="gallery-item">
-                <img
-                  src={
-                    tour?.image1 ||
-                    "assets/images/destinations/destination-details1.jpg"
-                  }
-                  alt="Destination"
-                />
-              </div>
-              <div className="gallery-item">
-                <img
-                  src={
-                    tour?.image2 ||
-                    "assets/images/destinations/destination-details1.jpg"
-                  }
-                  alt="Destination"
-                />
-              </div>
-            </div>
-            <div className="col-lg-4 col-md-6">
-              <div className="gallery-item">
-                <img
-                  src={
-                    tour?.image5 ||
-                    "assets/images/destinations/destination-details1.jpg"
-                  }
-                  alt="Destination"
-                />
-              </div>
-            </div>
-            <div className="col-lg-4 col-md-6">
-              <div className="gallery-item">
-                <img
-                  src={
-                    tour?.image3 ||
-                    "assets/images/destinations/destination-details1.jpg"
-                  }
-                  alt="Destination"
-                />
-              </div>
-              <div className="gallery-item">
-                <img
-                  src={
-                    tour?.image4 ||
-                    "assets/images/destinations/destination-details1.jpg"
-                  }
-                  alt="Destination"
-                />
-              </div>
-            </div>
-            {/* <div className="col-lg-12">
-              <div className="gallery-more-btn">
-                <Link
-                  href="contact"
-                  className="theme-btn style-two bgc-secondary"
-                >
-                  <span data-hover="See All Photos">See All Photos</span>
-                  <i className="fal fa-arrow-right" />
-                </Link>
-              </div>
-            </div> */}
-          </div>
+          {tour && (
+            <Gallery images={[
+              tour.image1,
+              tour.image2,
+              tour.image3,
+              tour.image4,
+              tour.image5,
+            ].filter(image => image)} />
+          )}
         </div>
       </div>
       {/* Tour Gallery End */}
@@ -195,9 +167,19 @@ const page = () => {
                 data-aos-duration={1500}
                 data-aos-offset={50}
               >
-                <span className="location d-inline-block mb-10">
-                  <i className="fal fa-map-marker-alt" /> {tour?.location}
-                </span>
+                <div className="d-flex justify-content-between align-items-center mb-10">
+                  <span className="location d-inline-block">
+                    <i className="fal fa-map-marker-alt" /> {tour?.location}
+                  </span>
+                  <button 
+                    onClick={scrollToBooking}
+                    className="theme-btn style-two bgc-secondary"
+                    style={{ whiteSpace: 'nowrap' }}
+                  >
+                    <span data-hover="Book Now">Book Now</span>
+                    <i className="fal fa-arrow-right" />
+                  </button>
+                </div>
                 <div className="section-title pb-5">
                   <h2>{tour?.title2}</h2>
                 </div>
@@ -807,7 +789,8 @@ const page = () => {
                         <li>
                           <input
                             className="form-check-input"
-                            defaultChecked=""
+                            checked={selectedTime === '12:00'}
+                            onChange={() => setSelectedTime('12:00')}
                             type="radio"
                             name="time"
                             id="time1"
@@ -817,6 +800,8 @@ const page = () => {
                         <li>
                           <input
                             className="form-check-input"
+                            checked={selectedTime === '08:00'}
+                            onChange={() => setSelectedTime('08:00')}
                             type="radio"
                             name="time"
                             id="time2"
@@ -829,21 +814,34 @@ const page = () => {
                     <h6>Tickets:</h6>
                     <ul className="tickets clearfix">
                       <li>
-                        Adult (18- years) <span className="price">$28.50</span>
-                        <select name="18-" id="18-">
-                          <option value="value1">01</option>
-                          <option value="value1">02</option>
-                          <option value="value1" selected="">
-                            03
-                          </option>
+                        Adult (18- years) <span className="price">${adultPrice}</span>
+                        <select 
+                          name="18-" 
+                          id="18-"
+                          value={adultCount}
+                          onChange={(e) => setAdultCount(parseInt(e.target.value))}
+                        >
+                          <option value="1">01</option>
+                          <option value="2">02</option>
+                          <option value="3">03</option>
+                          <option value="4">04</option>
+                          <option value="5">05</option>
                         </select>
                       </li>
                       <li>
-                        Adult (18+ years) <span className="price">$50.40</span>
-                        <select name="18+" id="18+">
-                          <option value="value1">01</option>
-                          <option value="value1">02</option>
-                          <option value="value1">03</option>
+                        Adult (18+ years) <span className="price">${childPrice}</span>
+                        <select 
+                          name="18+" 
+                          id="18+"
+                          value={childCount}
+                          onChange={(e) => setChildCount(parseInt(e.target.value))}
+                        >
+                          <option value="0">00</option>
+                          <option value="1">01</option>
+                          <option value="2">02</option>
+                          <option value="3">03</option>
+                          <option value="4">04</option>
+                          <option value="5">05</option>
                         </select>
                       </li>
                     </ul>
@@ -853,30 +851,33 @@ const page = () => {
                       <li>
                         <input
                           className="form-check-input"
-                          defaultChecked=""
+                          checked={extraService === 'per_booking'}
+                          onChange={() => setExtraService('per_booking')}
                           type="radio"
                           name="AddExtra"
                           id="add-extra1"
                         />
                         <label htmlFor="add-extra1">
-                          Add service per booking <span>$50</span>
+                          Add service per booking <span>${extraServicePerBooking}</span>
                         </label>
                       </li>
                       <li>
                         <input
                           className="form-check-input"
+                          checked={extraService === 'per_person'}
+                          onChange={() => setExtraService('per_person')}
                           type="radio"
                           name="AddExtra"
                           id="add-extra2"
                         />
                         <label htmlFor="add-extra2">
-                          Add service per personal <span>$24</span>
+                          Add service per personal <span>${extraServicePerPerson}</span>
                         </label>
                       </li>
                     </ul>
                     <hr />
                     <h6>
-                      Total: <span className="price">$74</span>
+                      Total: <span className="price">${calculateTotal()}</span>
                     </h6>
                     <button
                       type="submit"

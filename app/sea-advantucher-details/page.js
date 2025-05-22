@@ -47,7 +47,7 @@ const page = () => {
       id: 2,
       title: "8. Can I customize my Dubai City Tour?",
       answer:
-        "Yes, you can customize your city tour according to your preferences. Let us know which places you'd like to visit, and we will adjust the itinerary.",
+        "Yes, you can customize your city tour according to your preferences. Let us know which places you'd like to visit, and we will adjust the FAQs.",
     },
     {
       id: 3,
@@ -366,7 +366,7 @@ const page = () => {
                   <b>Yoga</b>
                 </div>
               </div> */}
-              <h3>Itinerary</h3>
+              <h3>FAQs</h3>
               <Accordion
                 className="accordion-two mt-25 mb-60"
                 defaultActiveKey={active}

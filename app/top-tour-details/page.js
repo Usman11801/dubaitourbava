@@ -279,7 +279,7 @@ const page = () => {
                   <b>Yoga</b>
                 </div>
               </div> */}
-               {/* <h3>Itinerary</h3>
+               {/* <h3>FAQs</h3>
               <Accordion
                 className="accordion-two mt-25 mb-60"
                 defaultActiveKey={active}

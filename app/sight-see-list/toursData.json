@@ -199,7 +199,7 @@
             "meals_beverages": "Meals and beverages are not included unless specified, and participants are responsible for their own food and drinks.",
             "personal_expenses": "Souvenirs, personal purchases, tips for guides and drivers, and any other personal expenses are not covered in the price.",
             "guide_gratuities": "Tipping the tour guide and driver is not included and is at the discretion of the participants.",
-            "additional_transportation": "Any transportation for optional activities or private transfers outside the specified itinerary are not included.",
+            "additional_transportation": "Any transportation for optional activities or private transfers outside the specified FAQs are not included.",
             "language_specific_guides": "A language-specific guide may incur additional fees if required."
           }
       },
@@ -453,7 +453,7 @@
         "excluded": {
           "meals": "Meals and personal expenses",
           "tips": "Tips for the guide and driver",
-          "optional_activities": "Optional activities beyond the set itinerary"
+          "optional_activities": "Optional activities beyond the set FAQs"
         },
         "badge": "Featured",
         "rating": 5,
@@ -474,19 +474,19 @@
         "image3": "https://images.pexels.com/photos/16681379/pexels-photo-16681379/free-photo-of-qasr-al-watan-in-abu-dhabi.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
         "image4": "https://images.pexels.com/photos/15128974/pexels-photo-15128974/free-photo-of-the-qasr-al-watan-in-united-arab-emirates.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
         "image5": "https://images.pexels.com/photos/31157349/pexels-photo-31157349/free-photo-of-luxurious-interior-of-al-watan-palace-abu-dhabi.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-        "description2": "Discover the splendor of Abu Dhabi with our exclusive Qasr Al Watan tour! Enjoy convenient pick-up and drop-off in our private, air-conditioned vehicle, accompanied by a professional guide who will share fascinating insights about each landmark. Experience the grandeur of Qasr Al Watan Presidential Palace and other major attractions, with a personalized itinerary tailored to your family's preferences. Stay connected throughout your journey with complimentary WiFi in the vehicle. This tour offers a perfect blend of cultural discovery and modern comfort!",
+        "description2": "Discover the splendor of Abu Dhabi with our exclusive Qasr Al Watan tour! Enjoy convenient pick-up and drop-off in our private, air-conditioned vehicle, accompanied by a professional guide who will share fascinating insights about each landmark. Experience the grandeur of Qasr Al Watan Presidential Palace and other major attractions, with a personalized FAQs tailored to your family's preferences. Stay connected throughout your journey with complimentary WiFi in the vehicle. This tour offers a perfect blend of cultural discovery and modern comfort!",
         "title2": "Abu Dhabi Tour with Qasr Al Watan",
         "inclusions": {
           "transportation": "Pick-up and drop-off in a private, air-conditioned vehicle from your hotel or home",
           "guide": "A professional guide providing informative insights into each landmark",
           "entrance": "Entrance to Qasr Al Watan and other major attractions",
-          "itinerary": "A personalized itinerary to suit your family's preferences",
+          "FAQs": "A personalized FAQs to suit your family's preferences",
           "wifi": "Free WiFi in the vehicle for your convenience"
         },
         "excluded": {
           "meals": "Meals and personal expenses",
           "tips": "Tips for the guide and driver",
-          "optional_activities": "Optional activities outside the set itinerary"
+          "optional_activities": "Optional activities outside the set FAQs"
         },
         "badge": "Featured",
         "rating": 5,
@@ -544,12 +544,12 @@
         "inclusions": {
           "guide": "Professional guide providing fascinating stories and facts about Abu Dhabi",
           "transportation": "Private, air-conditioned vehicle for comfortable travel",
-          "entrance_fees": "All entrance fees to attractions included in the itinerary",
+          "entrance_fees": "All entrance fees to attractions included in the FAQs",
           "priority_access": "Skip-the-line priority access to the park"
         },
         "excluded": {
           "meals": "While meals are not included, you'll have the flexibility to explore local cuisines according to your preferences",
-          "personal_expenses": "Any personal purchases or expenses outside the itinerary are not covered",
+          "personal_expenses": "Any personal purchases or expenses outside the FAQs are not covered",
           "gratuities": "Tips for the guide and driver are not included but are appreciated for exceptional service"
         },
         "badge": "Featured",
@@ -604,18 +604,18 @@
         "image3": "https://static.toiimg.com/photo/93554995.cms",
         "image4": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTsgVmEMqfHLw7BAZWF7buBNspgTJ_sYuqOecbbLckL127pdAx4iXJnI1Uyu3Ah6-u2uk0&usqp=CAU",
         "image5": "https://static.myconnect.ae/-/media/yasconnect/project/yasisland/general-pages/2-theme-parks--attractions/yaswaterworlddesktop.png",
-        "description2": "Discover the perfect blend of entertainment and culture with our Abu Dhabi Tour featuring Yas Island Parks! Travel in comfort in our private, air-conditioned vehicle with a professional guide who will enhance your experience with insightful commentary. Enjoy entrance to all major attractions as per the itinerary, with customizable options to perfectly align with your preferences. Whether you're seeking thrilling rides at Yas Island Parks or exploring Abu Dhabi's cultural landmarks, this tour offers the best of both worlds!",
+        "description2": "Discover the perfect blend of entertainment and culture with our Abu Dhabi Tour featuring Yas Island Parks! Travel in comfort in our private, air-conditioned vehicle with a professional guide who will enhance your experience with insightful commentary. Enjoy entrance to all major attractions as per the FAQs, with customizable options to perfectly align with your preferences. Whether you're seeking thrilling rides at Yas Island Parks or exploring Abu Dhabi's cultural landmarks, this tour offers the best of both worlds!",
         "title2": "Abu Dhabi Tour with Yas Island Parks",
         "inclusions": {
           "transportation": "Private transportation in a comfortable, air-conditioned vehicle",
           "guide": "Professional guide to enhance your experience with insightful commentary",
-          "entrance_fees": "Entrance fees to all major attractions as per the itinerary",
+          "entrance_fees": "Entrance fees to all major attractions as per the FAQs",
           "customization": "Customizable tour options to align perfectly with your preferences"
         },
         "excluded": {
           "meals": "Meals and personal expenses",
           "gratuities": "Tips for guides and drivers (optional but appreciated)",
-          "additional_activities": "Any additional activities outside the predefined itinerary"
+          "additional_activities": "Any additional activities outside the predefined FAQs"
         },
         "badge": "Featured",
         "rating": 5,
